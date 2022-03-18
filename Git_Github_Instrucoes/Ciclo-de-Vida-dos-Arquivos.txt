@@ -1,0 +1,74 @@
+'openssl sha1 <arquivo>' - Passar arquivo para o algorítmo de encriptação
+'ls -a' - Flag que mostra arquivos ocultos
+'echo > <nome>' - Cria arquivo
+'git config --global user.email "email@xxx.com"/git config --global user.name "nome"' - É necessário pq na criação do Commit precisa de um autor
+'git init' - Cria um repositório
+'git status' - Diz se o arquivo está Unmodified, Modified ou Staged
+'mv' - Mover arquivo para './<pasta>/
+'git ad <arquivo>' - Move para Tracked/Staged
+'git ad * ' - Pega tudo que está no diretório de trabalho e adiciona na staged para comitar
+'git commit -m "passa mensagem"' - Basicamente escreve a mensagem que o commit vai carregar
+'git config --list' - Mostra todas as configurações
+'git config --global --unset user.email' - Apaga o email salvo na config
+'git config --global --unset user.name' - Apaga o nome salvo na config
+'git remote add origin "link"' - Adicionar o Local Repository no github, origin aqui é tipo um #define em c
+'git remote -v' - Lista os repositórios cadastrados
+'git push origin master' - Leva do Local Repository para o Remote Repository, master é um branch
+'git restore --staged' - Tira do Staged para Untracked
+'git clone <url>' - Clona Repositório
+'git add <arquivo> <pasta>/' - Manda pasta e arquivo para staged
+'git rm <pasta>/<arquivo' - Remover pasta e arquivo dentro dela
+
+#Pasta .git contém todos os versionamentos de código
+
+______Tópicos Fundamentais do GIT______
+
+'SHA1' - Encriptação gera um conjunto de caracteres de identificação de 40 digitos.
+
+BLOBS (Arquivos) - Blocos básicos de composição. Guarda o SHA1 do arquivo. Contém metadados(dados de outros dados), tipo, tamanho do arquivo, conteúdo(texto,binário etc);
+TREE (Pastas) - Responsável por montar a estrutura de onde estão os BLONS (Arquivos). Armazena os BLOBS, aponta para eles. Tem o SHA1 com os metadados das BLOBS.
+COMMIT - Aponta para uma TREE, Parente (O último commit realizado), autor e para uma Mensagem (Da significado para os arquivos e pastas no Commit). Tem SHA1.
+
+______Ciclo de Vida dos Arquivos_______
+
+Tracked (Arquivos Rastreados):
+- Unmodified, Não modificado;
+- Modified, Unmodified que sofreu modificação, compara o SHA1 dos arquivos, se roda o git ed nele ele vai para Staged;
+- Staged, Preparando para o palco - Se preparando para outro agrupamento(Commit);
+Obs: Commit volta para Unmodified.
+
+Untracked (Arquivos não Rastreados):
+- Adiciona o arquivo;
+
+Git init(Arquivo Untracked pq criamos na hora)->Git ed(Move para Staged).
+
+Repositório:
+
+- Ambiente de Desenvolvimento:
+ - Working Directory, Untracked;
+ - Staging Area, Unmodified, Modified;
+ - Local Repository, Staged.
+
+- Servidor
+ - Remote Repository
+__________________________________________________________________________________
+
+_____Resolvendo Conflitos em Versionamento Distribuído_____
+
+Supondo que em uma situação de Versionamento Distribuído alguém coloque um commit
+mais atualizado e, após isso você vá dar push no seu commit, fica aberta a possibilidade
+de conflito e o seu arquivo (considerado com uma data mais desatualizada) será
+barrado pelo github. Problema de Integração. Sem Pull (puxar para a maquina).
+Sendo assim, você terá que seguir os passos abaixo:
+
+- git pull origin master (Vai mostrar onde está o conflito e pedir para você mesmo consertar. Nesse caso o github vai mostrar as duas versões e você decide qual será sobrescrita)
+
+- Salva arquivo
+
+- git add <arquivo> ou git add *
+
+- git commit -m "Conflito resolvido"
+
+- git push origin master
+
+
