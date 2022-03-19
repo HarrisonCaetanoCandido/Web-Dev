@@ -12,16 +12,110 @@ Exemplo de Elemento HTML:
 - A Tag tem 'Título' como *Conteúdo*;
 - Fechando a Tag: '/h1>'.
 
+_________________________________________________________________________________________________________
+
 ## Estrutura Básica
 
-<!DOCTYPE hmtl>    => Apenas diz ao navegador qual o tipo de arquivo
-<html>             => Tudo dentro do arquivo HTML estará dentro da tag <html></html>
- <head>		   => Meta informações que o navegador ou que um buscador de internet necessita
-  <meta>	   => Meta é uma das tags que são muito utilizadas para ajudar a cumprir a função da tag <head></head>
-  <title></title>  => Coloca Título na Aba do Navegador
- </head>	   => Fim da <head></head>
- <body>	     	   => Onde fica o conteúdo do site 
+<!DOCTYPE hmtl>    
+<html>             
+ <head>		   
+  <meta>	   
+  <title></title>  
+ </head>	   
+ <body>	     	   
  </body>
+
+<!DOCTYPE html>
+=> Apenas diz ao navegador qual o tipo de arquivo
+
+<html></html>
+=> Tudo dentro do arquivo HTML estará dentro da tag <html></html>
+
+<head></head>
+=> Metadados que o navegador ou que um buscador de internet necessita, como o charset,
+   que é a codificação de caracteres e a mais comum para o padrão brasileiro é a UTF-8.
+   
+   O conceito da <head></head> aparece em outras linguagens como 'Tag Script' em Js e
+   Tags Style e Link em CSS.
+
+<meta>	   
+=> Meta é uma das tags que são muito utilizadas para ajudar a cumprir a função da tag <head></head>
+
+<title></title>  
+=> Coloca Título na Aba do Navegador
+	   
+<body>	     	   
+=> Onde fica todo o conteúdo do site como textos, imagens e vídeos
+
+_________________________________________________________________________________________________________
+
+## Semântica
+
+É ela quem nos permite descrever com mais precisão o nosso conteúdo, já que um bloco de texto na versão 2014 
+do HTML não é mais apenas uma 'div', agora ele é um article, com mais significado.
+
+Sendo assim temos alguns elementos que ressignificam as divs:
+
+<section>
+=> Seção genérica de conteúdo quando não houver um elemento mais específico para tal
+
+<header>
+=> É o cabeçalho da página ou seção da página e normalmente contém logotipos, menus, campos de busca etc.
+
+<article>
+=> Representa um conteúdo independente e de maior relevância dentro de uma página, como um post de blog, uma
+   notícia em uma barra lateral ou um bloco de comentários.
+   
+   Um article pode conter outros elementos, como <header>,cabeçalhos, parágrafos e imagens.
+
+<aside>
+=> É uma seção que engloba conteúdos relacionados ao conteúdo principal, como artigos relacionados, biografia do
+   autor e publicidade (Google Ads etc). Normalmente são representadas como barras laterais.
+
+<footer>
+=> Representa o rodapé do conteúdo ou de parte dele, pois ele é aceito dentro de vários elementos, como <article>,
+   <section> e <body>. Geralmente contém informação de autor e links relacionados ao conteúdo da página/site.
+
+<h1>-<h6>
+=> Eles não foram criados na versão 5 do HTML e nem são específicos para semântica, mas servem para esse propósito. 
+   São utilizados para marcar a importância dos títulos, sendo <h1> o mais importante e <h6> o menos. 
+   Uma dica: use apenas um <h1> por página, pois ele representa o objetivo da sua página.
+
+Aqui vão algumas pequenas tags importantes:
+
+<p>
+=> Representa um parágrafo que suporta imagem, texto, código, vídeos etc.
+
+<a>
+=> Anchor/Âncora representa um hyperlink, interliga vários conteúdos e páginas na Web.
+
+href="link"
+=> Representa hyperlink para onde sua Âncora aponta.
+
+<img>
+=> Uma das tags sem fechamento que contém os atributos 'src' e 'alt', sendo o primeiro (obrigatório) quem guarda o 
+   endereço (Da sua máquina) da imagem que você quer mostrar na página, enquanto que o segundo (não obrigatório),
+   muito recomendado para melhorar a acessibilidade, mostra a descrição da imagem caso ela não carregue e leitores
+   de tela usam esse atributo para descrever a imagem para o usuário saber o que ela significa.
+
+<h1>-<h6>
+= > Como já falei, temos essas para títulos também.
+
+___________________________________________________________________________________________________________________________
+
+## Listas
+
+Servem para agrupar uma coleção de itens, como uma lista de ingredientes ou lista de contatos.
+
+<ul>
+=> Cria uma lista em que a ordem não importa, representada com pontos, círculos ou quadrados.
+
+<ol>
+=> Cria uma lista em que a ordem importa, sendo representadas com números ou algarismos romanos ou letras.
+
+<li>
+=> É o elemento item dentro dessas listas. Contém vários tipos de conteúdo, como parágrafos, imagens e até outras listas.
+
 
 
 
