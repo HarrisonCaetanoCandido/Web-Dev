@@ -142,7 +142,19 @@ Estrutura de Exemplo de um Seletor de CLASSE:
 Estrutura de Exemplo de um Seletor de ID:
 
 #header {
-  padding: 15px;
+  padding: 15px; 
+}
+
+OBS: Em padding temos algumas coordenadas, como:
+
+Exemplo 1:
+.post{
+  padding 10px 5px (superior-inferior, esquerdo-direito)
+}
+
+Exemplo 2:
+.post{
+  padding 15px 10px 5px 0; (superior, direita, inferior, esquerda)
 }
 
 OBS: Para atributos do tipo 'ID' nós somos obrigados a usá-lo apenas uma vez, sendo
@@ -155,7 +167,7 @@ Margin(Border(Padding(Content)))
 Margin 
 => Espaçamento entre elementos
 
-Border
+Border(Border radius também, da pra mexer na curvatura da borda)
 => Circundam o Padding e o Conteúdo
 
 Padding
