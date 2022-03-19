@@ -86,7 +86,8 @@ Aqui vão algumas pequenas tags importantes:
 <p>
 => Representa um parágrafo que suporta imagem, texto, código, vídeos etc.
 
-<a>
+<a></a> ou <a href="link>Texto</a> ou <a target=_blank">Link</a> (target serve para dizer como o link será aberto)
+'mailto:' ou 'tel:' em href
 => Anchor/Âncora representa um hyperlink, interliga vários conteúdos e páginas na Web.
 
 href="link"
