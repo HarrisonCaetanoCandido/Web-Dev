@@ -176,9 +176,22 @@ Padding
 Conteúdo ou Content
 => É o que o bloco representa, texto, imagem ou vídeo
 
+## Dimensão e Alinhamento
 
+Width 
+=> Largura
 
+Height 
+=> Altura
 
+Max-Width
+=> Largura Máxima que o elemento pode ter quando for ajustado
 
+Max-Height
+=> Altura Máxima que o elemento pode ter quando for ajustado
 
+Margin 
+=> Também serve para alinhar, faz isso automaticamente
 
+Text align
+=> Alinhar o texto na esquerda(left), direita(right), centro(center), ou justificar(justify)
