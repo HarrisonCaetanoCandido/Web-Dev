@@ -116,6 +116,56 @@ Servem para agrupar uma coleção de itens, como uma lista de ingredientes ou li
 
 <li>
 => É o elemento item dentro dessas listas. Contém vários tipos de conteúdo, como parágrafos, imagens e até outras listas.
+____________________________________________________________________________________________________________________________________
+
+			Introdução CSS
+
+Criar regras de estilo para um elemento ou grupo de elementos
+
+São formadas por:
+Seletores: 'a,p,h1,h3', ou seja elementos HTML
+Declarações: 'color: #hex-decimal;', 'font-size: 14px;',basicamente são as regras passadas aos elementos HTML
+
+Estrutura de Exemplo de um Seletor de TIPO:
+
+a, p, h1, h3 {
+  color: #hexadecimal
+  font-size: 14px;
+}
+
+Estrutura de Exemplo de um Seletor de CLASSE:
+
+.header{
+  padding: 10px;
+}
+
+Estrutura de Exemplo de um Seletor de ID:
+
+#header {
+  padding: 15px;
+}
+
+OBS: Para atributos do tipo 'ID' nós somos obrigados a usá-lo apenas uma vez, sendo
+mais recomendados para títulos 'h1'. Para atributos do tipo 'class' nós poderemos repetir o quanto quisermos.
+
+## Box Model
+
+Margin(Border(Padding(Content)))
+
+Margin 
+=> Espaçamento entre elementos
+
+Border
+=> Circundam o Padding e o Conteúdo
+
+Padding
+=> Espaçamento entre a Borda e o Conteúdo
+
+Conteúdo ou Content
+=> É o que o bloco representa, texto, imagem ou vídeo
+
+
+
 
 
 
