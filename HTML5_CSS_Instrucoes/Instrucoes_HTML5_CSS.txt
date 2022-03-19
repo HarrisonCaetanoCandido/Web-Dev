@@ -1,0 +1,27 @@
+# Elemento HTML
+
+Elemento é a base do HTML, tudo dentro de um documento HTML é um Elemento.
+
+Exemplo de Elemento HTML:
+
+<h1 class="titulo">Título</h1> 
+
+- Abrindo a Tag: '<'; 
+- Tipo de elemento 'h1'; 
+- A Tag pode ter um *Atributo* 'class="titulo"';
+- A Tag tem 'Título' como *Conteúdo*;
+- Fechando a Tag: '/h1>'.
+
+## Estrutura Básica
+
+<!DOCTYPE hmtl>    => Apenas diz ao navegador qual o tipo de arquivo
+<html>             => Tudo dentro do arquivo HTML estará dentro da tag <html></html>
+ <head>		   => Meta informações que o navegador ou que um buscador de internet necessita
+  <meta>	   => Meta é uma das tags que são muito utilizadas para ajudar a cumprir a função da tag <head></head>
+  <title></title>  => Coloca Título na Aba do Navegador
+ </head>	   => Fim da <head></head>
+ <body>	     	   => Onde fica o conteúdo do site 
+ </body>
+
+
+
