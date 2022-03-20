@@ -2,13 +2,22 @@ body{
     /*font: 20px Arial, sans-serif;/* Ver de mudar ou tirar pq eu n curti muito*/
 }
 
+h3{
+    text-transform: capitalize;
+}
+
 .navbar{
     background-color: #FDFEFE;
+    margin: auto;
 }
 
 .logo{
-    padding-left: 120px;
-    max-width:30%;
+    max-width: 20%;
+    margin-right: 0px;
+}
+
+.logodefato{
+    padding-left: 25%;
 }
 
 .nav-item:hover{
@@ -19,25 +28,26 @@ body{
     max-width: 50%;
     font-family: system-ui, -apple-system, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 20px;
-    font-weight:bold;
+    font-weight: bold;
     margin-top: 10px;
-    color: #333333;
+    color: #1e8449;
+    padding-left: 2%;
 }
 
 .tamanho_item{
-    margin: 3px;
+    margin-right:
 }
 
 .navbar-nav{
-    max-width: 20%;
-    padding-left: 500px;
+    max-width: 30%;
+    padding-left: 2%;
 }
 
 .nav-link:hover{
     color: #1e8449;
 }
 
-.Sobre{
+.Sobre_mim{
     background-color: #1E8449;
     color: white;
 }
@@ -48,5 +58,17 @@ body{
 }
 
 .Portfolio{
-    background-color: 
+    background-color: white;
+    color: #1E8449;
+}
+
+.Contato{
+    background-color: #1e8449;
+    color:  white;
+}
+
+.bg-footer{
+    background-color: #1e8449;
+    color:  white;
+    margin: auto;
 }
