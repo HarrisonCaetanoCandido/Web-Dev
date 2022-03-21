@@ -1,9 +1,26 @@
 body{
     /*font: 20px Arial, sans-serif;/* Ver de mudar ou tirar pq eu n curti muito*/
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
 }
 
 h3{
     text-transform: capitalize;
+}
+
+h4{
+    text-transform: capitalize;
+}
+
+.justificar_texto{
+    text-align: justify;
+}
+
+.navegacao{
+    width: 1200px;
+    position: relative;
+    margin: 0 auto;
 }
 
 .navbar{
@@ -12,12 +29,12 @@ h3{
 }
 
 .logo{
-    max-width: 20%;
+    max-width: 30%;
     margin-right: 0px;
 }
 
 .logodefato{
-    padding-left: 25%;
+    padding-left: 20%;
 }
 
 .nav-item:hover{
@@ -35,11 +52,11 @@ h3{
 }
 
 .tamanho_item{
-    margin-right:
+    margin-left: 500px;
 }
 
 .navbar-nav{
-    max-width: 30%;
+    max-width: 50%;
     padding-left: 2%;
 }
 
@@ -56,16 +73,52 @@ h3{
     padding-top: 40px;
     padding-bottom: 40px;
 }
+/*______________PORTFOLIO_____________________*/
 
 .Portfolio{
     background-color: white;
     color: #1E8449;
 }
 
+.card_pag_inicial{
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.card_pag_inicial:hover{
+    transform: scale(1.1);
+}
+
+.link_nome{color: #1E8449;text-decoration: none;}
+.link_nome:hover{color: #1E8449;}
+.link_portfolio{color: #1E8449;text-decoration: none;}
+.link_portfolio:hover{color: #1E8449;}
+/*_______________CONTATO__________________*/
+
 .Contato{
     background-color: #1e8449;
-    color:  white;
+    color: white;
 }
+
+.col-lg-4 a{
+    color: white;
+    text-decoration: none;
+}
+
+.col-lg-4 a:hover{
+    color: #D5D8DC;
+    font-size: 16px;
+}
+
+.sombra{
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.sombra:hover{
+    transform: scale(1.1);
+}
+/*_____________________FOOTER______________________*/
 
 .bg-footer{
     background-color: #1e8449;
