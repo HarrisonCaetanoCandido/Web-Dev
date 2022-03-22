@@ -26,10 +26,6 @@ h4{
     text-align: left;
 }
 
-.menu_navegacao{
-    float: right;
-}
-
 .navbar{
     background-color: #FDFEFE;
     margin: auto;
@@ -78,9 +74,13 @@ h4{
     padding-bottom: 40px;
 }
 
+.margin-titulo-analisdados{
+    padding: 10px 0 40px 0;
+}
+
 .margin-lateral{
-    padding-left:10px;
-    padding-right: 10px;
+    /*padding-left:10px;padding-right: 10px;padding-bottom:10px;*/
+    padding:5px;
 }
 /*______________PORTFOLIO_____________________*/
 
