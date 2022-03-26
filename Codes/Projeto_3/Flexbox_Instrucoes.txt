@@ -1,0 +1,124 @@
+# Flexbox
+
+Modelo de Layout unidimensional e como um método que pode oferecer distribuição de espaço
+entre itens em uma interface e recursos de alinhamento.
+
+## Flex Container
+
+É a tag que envolve os itens, é nela que vamos aplicar propriedade "display:flex". 
+Transforma todos os seus itens filhos em flex itens. 
+
+A inicialização do Container pode ser aberta em qualquer tag.
+
+Propriedades dos Flex Containers:
+
+display
+=> Inicializador do container
+
+flex-direction
+=> Faz o direcionamento dos itens em linha ou coluna. Basicamente estabelece eixos principais no container que
+   define a direção que os flex items são colocados no flex container
+
+flex-wrap
+=> Vai se aplicar para quebra de linha ou não
+
+flex-flow
+=> Abreviação para direction e wrap
+
+justify-content
+=> Alinhar itens do container de acordo com sua direção
+
+align-items
+=> Alinhar itens de acordo com seu eixo no container
+
+align-content
+=> Alinhar as linhas do container
+
+## Flex Item
+
+São os elementos filhos diretos do Flex Container. 
+Também podem ser aplicados a propriedade de display 
+e se tornarem Flex Container
+
+Propriedades dos Flex Itens:
+
+flex-grow
+=> Define fator de Crescimento
+
+flax-basis
+=> Define o tamanho inicial do item antes da distribuição do espaço restante dentro do container
+
+flex-shrink
+=> Define a capacidade de redução
+
+flex
+=> Abreviação de grow, basis e shrink
+
+order
+=> Ordem de distribuição e Listagem desses itens
+
+align-self
+=> Define o alinhamento de um item especifico do nosso Container
+
+## flex-direction
+
+Faz o direcionamento dos itens em linha ou coluna. Basicamente estabelece eixos principais no container que
+define a direção que os flex items são colocados no flex container
+
+Eixos:
+
+row(padrão): Direção do texto, esquerda para direita. Os itens tem o mesmo comportamento, 1234
+
+row-reverse: Sentido oposto a direção do texto. Os items vem na ordenação inversa
+
+Column(padrão): Ordenação de cima para baixo, em coluna única
+
+Column-reverse: Ordenação inversa, de baixo para cima
+
+
+## Exemplos:
+
+### display:flex
+
+Bastante usado para menus responsivos
+<head>
+<style>
+        .flex{ /*Funciona para nosso container*/
+            max-width: 300px;
+            padding: 10px;
+            border: 2px solid black; /*So pra ver o comportamento acontecendo*/
+            display: flex;
+        }
+
+        .item{ /*Funciona para nossos itens*/
+            background-color: aqua;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+<div class="flex">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+    </div>
+</body>
+
+### flex-wrap
+
+É a propriedade que define se os itens devem ou não quebrar a linha.
+
+Por padrão eles não quebram linhas, isso faz com que os flex itens sejam compactados além do limite do
+conteúdo. Quando o container não consegue mais abrigar os itens, acontece o NOWRAP, que é quando os itens
+VAZAM do Container
+
+nowrap
+=> Comportamento padrão que não permite a quebra de linha
+
+É aí que entra o WRAP:
+
+wrap
+=> Permite a quebra de linha assim que um dos flex itens não puder mais ser compactado no container
+
+wrap-reverse
+=> Permite a quebra de linha, mas na direção inversa
