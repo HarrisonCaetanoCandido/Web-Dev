@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox: align-itens</title>
+
+    <style>
+        .flex-container{
+            display: flex;
+            max-width: 350px;
+            border: 2px solid black;
+        }
+
+        .flex-item{
+            background-color: blueviolet;
+            margin: 5px;
+            color: white;
+            text-align: center;
+        }
+
+        .flex{
+            flex: 1; /*Cuida da distribuicao de tamanho dos nossos itens*/
+        }
+
+        .center{
+            align-items: center;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>center</h1>
+    <section class="flex-container center">
+        <div class="flex-item flex">item 1</div>
+        <div class="flex-item flex">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+        <div class="flex-item flex">item 3</div>
+    </section>
+</body>
+</html>

@@ -150,3 +150,25 @@ space-between
 
 space-around
 => Trata do espacamento do meio que é duas vezes maior que o inicial e final
+
+### align-items 
+Trata do alinhamento de flex-itens de acordo com o eixo do container.
+Tratamento diferente dependendo do eixo. Permite o alinhamento central
+no eixo vertical (Nao precisa de altura).
+
+Tipos de alinhamento:
+
+center 
+=> Alinhamento no centro
+
+stretch
+=> Padrão, e os flex-itens crescem igualmente
+
+flex-start 
+=> Leva todos os itens para o inicio do container
+
+flex-end
+=> Leva todos os itens para o fim do container
+
+baseline
+=> Alinhamento de acordo com o eixo da tipografia dentro dos itens
