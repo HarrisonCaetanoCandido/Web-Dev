@@ -122,3 +122,31 @@ wrap
 
 wrap-reverse
 => Permite a quebra de linha, mas na direção inversa
+
+### flex-flow
+
+É um atalho para as propriedades flex-direction e flex-wrap, ele basicamente comprime a escrita das propriedades
+Não é tão comum, pois quando mudamos o flex-direction para column, mantemos o padrão do flex-wrap que é nowrap
+
+### Justify content
+
+Se encarrega de alinhas itens dentro do container de acordo com a direção pretendida
+e tratar da distribuição de espaçamento entre eles.
+
+Variações:
+
+flex-start
+=> Alinhamento no inicio do container
+
+flex-end
+=> Alinhamento ao final do container
+
+center
+=> Alinhamento ao centro do container
+
+space-between
+=> Espaco igual entre os elementos, porem aproxima o primeiro item a esquerda
+   e o item final a direita
+
+space-around
+=> Trata do espacamento do meio que é duas vezes maior que o inicial e final
