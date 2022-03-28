@@ -162,13 +162,45 @@ center
 => Alinhamento no centro
 
 stretch
-=> Padrão, e os flex-itens crescem igualmente
+=> Padrão, e os flex-itens crescem igualmente, faz com que os itens crescam de acordo
+   com o maior item dentro do container
 
 flex-start 
-=> Leva todos os itens para o inicio do container
+=> Leva todos os itens para o inicio do container, fica em ordem crescente da esquerda
+   para direita
 
 flex-end
-=> Leva todos os itens para o fim do container
+=> Leva todos os itens para o fim do container, fica em ordem decrescente da esquerda
+   para direita
 
 baseline
 => Alinhamento de acordo com o eixo da tipografia dentro dos itens
+
+### align-content
+
+Responsável por tratar o alinhamento das linhas do container em relação ao eixo vertical 
+do container. 
+
+Para isso nosso container precisará respeitar algumas orientações, como:
+ - Quebra de linhas;
+ - Altura do container maior que a soma das linhas dos itens.
+
+Tipos de alinhamento:
+
+center
+=> Alinhamento dos itens ao centro
+
+stretch
+=> Representa o crescimento padrão, igualiário entre os itens
+
+flex-start
+=> Alinhamento dos itens ao início
+
+flex-end
+=> Alinhamento dos itens ao final
+
+space-between
+=> Cria espaçamento igual entre os elementos
+
+space-around
+=> Os espaçamento criados no meio são duas vezes maiores que o inicial e final
