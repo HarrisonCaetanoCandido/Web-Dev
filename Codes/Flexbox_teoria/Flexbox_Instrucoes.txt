@@ -130,7 +130,7 @@ Não é tão comum, pois quando mudamos o flex-direction para column, mantemos o
 
 ### Justify content
 
-Se encarrega de alinhas itens dentro do container de acordo com a direção pretendida
+Se encarrega de alinhar itens dentro do container de acordo com a direção pretendida
 e tratar da distribuição de espaçamento entre eles.
 
 Variações:
@@ -204,3 +204,56 @@ space-between
 
 space-around
 => Os espaçamento criados no meio são duas vezes maiores que o inicial e final
+
+### flex-grow
+
+Define a proporcionalidade de crescimento dos itens, respeitando o tamanho de seus
+conteúdos internos.
+
+Obs: Não irá funcionar caso tenhamos adicionado 'justify-content' ao nosso flex
+     container
+
+### flex-basis
+
+Propriedade que estabelece o tamanho inicial do item antes da distribuição de espaço
+restante dentro dele, usando como base o conteúdo interno disposto.
+
+### flex-shrink
+
+Propriedade que estabelece a capacidade de redução ou compressão do tamanho de um item.
+
+### flex
+
+Propriedade que serve como atalho ou abreviação de escrita para as propriedades:
+grow, shrink e basis.
+
+flex-1: grow=1,shrink=1,basis=0
+flex-2: grow=2,shrink=1,basis=0
+
+### align-self
+
+Alinhamento individual dos itens. Container nao pode ter align-item definido
+
+Propriedades:
+
+auto
+=> Valor padrão, vai respeitar a definição de align-itens do container
+
+flex-start
+=> Alinha ao inicio do container
+
+flex-end
+=> Alinha ao fim do container
+
+center
+=> Alinha ao centro de acordo com o eixo
+
+stretch
+=> Ocupa todo o espaço relativo
+
+baseline
+=> Utiliza a linha base da tipografia
+
+### order
+
+Relacionada a organização dos nossos itens.

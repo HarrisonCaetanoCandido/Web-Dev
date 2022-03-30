@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox: order</title>
+    
+    <style>
+        .container{
+            display: flex;
+            max-width: 300px;
+            border: 1px solid black;
+            margin-bottom: 10px;
+        }
+
+        .item{
+            flex: 1;
+            background-color: brown;
+            color: white;
+            text-align: center;
+            margin: 5px;
+            font-size: 24px;
+        }
+
+        .order-0{
+            order:0;
+        }
+
+        .order-1{
+            order: 1;
+        }
+
+        .order-2{
+            order:2;
+        }
+
+        .order-3{
+            order:3;
+        }
+
+        .order-4{
+            order:4;
+        }
+
+        .direction{
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+    <h1>order</h1>
+    <h3>Eixo X</h3>
+    <p>order: 0</p>
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">4n</div>
+        <div class="item">4m</div>
+    </div>
+
+    <p>order: diferentes</p>
+    <div class="container">
+        <div class="item order-3">1</div>
+        <div class="item order-2">2</div>
+        <div class="item order-3">3</div>
+        <div class="item order-1">4</div>
+    </div>
+
+    <h3>Eixo Y</h3>
+    <p>order: diferentes</p>
+    <div class="container direction">
+        <div class="item order-3">1</div>
+        <div class="item order-2">2</div>
+        <div class="item order-3">3</div>
+        <div class="item order-1">4</div>
+    </div>
+</body>
+</html>

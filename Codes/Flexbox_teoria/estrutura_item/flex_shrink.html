@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container{
+            display:flex;
+            border: 1px solid black;
+            max-width: 350px;
+            margin-bottom: 10px;
+        }
+
+        .item{
+            background-color: orangered;
+            font-size: 24px;
+            text-align: center;
+            margin: 5px;
+        }
+        /*PAREI EM 4:30 NA VÍDEO AULA*/
+        .fg-1{
+            flex-grow: 1;
+        }
+
+        .shrink-1{
+            flex-shrink: 1;
+        }
+
+        .shrink-0{
+            flex-shrink: 0;
+            flex-basis: 200px; /*Diz pro item que ele precisa minimamente de 100px e diz que nao permitira a quebra do conteudo desses itens*/
+        }
+
+        .shrink-2{
+            flex-shrink: 2;
+            flex-basis: 100px;
+        }
+
+        .shrink-3{
+            flex-shrink: 3;
+            flex-basis: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h1>flex-shrink</h1>
+    <p>flex-shrink: 1</p>
+    <div class="container">
+        <div class="item fg-1 shrink-1">A</div>
+        <div class="item fg-1 shrink-1">B</div>
+        <div class="item fg-1 shrink-1">C</div>
+        <div class="item fg-1 shrink-1">D</div>
+        <div class="item fg-1 shrink-1">E</div>
+        <div class="item fg-1 shrink-1">F</div>
+        <div class="item fg-1 shrink-1">G</div>
+        <div class="item fg-1 shrink-1">H</div>
+        <div class="item fg-1 shrink-1">I</div>
+        <div class="item fg-1 shrink-1">J</div>
+    </div>
+    <div class="container">
+        <div class="item fg-1 shrink-1">A</div>
+        <div class="item fg-1 shrink-1">The generated</div>
+        <div class="item fg-1 shrink-1">C</div>
+        <div class="item fg-1 shrink-1">D</div>
+        <div class="item fg-1 shrink-1">E</div>
+    </div>
+
+    <p>flex-shrink: 0 / basis: 100px</p>
+    <div class="container">
+        <div class="item fg-1 shrink-0">A</div>
+        <div class="item fg-1 shrink-0">The generated</div>
+        <div class="item fg-1 shrink-0">C generated</div>
+        <div class="item fg-1 shrink-0">D generated</div>
+        <div class="item fg-1 shrink-0">E</div>
+    </div>
+
+    <p>flex-shrink: mix / basis: 100px</p>
+    <div class="container">
+        <div class="item fg-1 shrink-1">AAAAAAAAA</div>
+        <div class="item fg-1 shrink-2">The generated</div>
+        <div class="item fg-1 shrink-2">C</div>
+        <div class="item fg-1 shrink-3">D</div>
+    </div>
+</body>
+</html>

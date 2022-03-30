@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox: align-self</title>
+
+    <style>
+        .container{
+            display: flex;
+            max-width: 300px;
+            border: 1px solid black;
+            margin-bottom: 10px;
+            /*align-items: center;*/
+        }
+
+        .align-container{
+            align-items: center;
+        }
+
+        .column{
+            flex-direction: column;
+        }
+
+        .item{
+            margin: 5px;
+            text-align: center;
+            font-size: 24px;
+            color: white;
+            background-color: brown;
+        }
+
+        .center{
+            align-self: center;
+        }
+
+        .start{
+            align-self: flex-start;
+        }
+
+        .end{
+            align-self: flex-end;
+        }
+
+        .baseline{
+            align-self: baseline;
+        }
+
+        .stretch{
+            align-self: stretch;
+        }
+
+        .auto{
+            align-self: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>align-self</h1>
+    <h3>Eixo X</h3>
+    <section class="container align-container">
+        <div class="item auto">AAA</div>
+        <div class="item auto">123</div>
+        <div class="item auto">Lorem Ipsum is therefore always free from repetition</div>
+        <div class="item auto">ITEM 4</div>
+    </section>
+
+    <section class="container">
+        <div class="item center">AAA</div>
+        <div class="item start">123</div>
+        <div class="item stretch">Lorem Ipsum is therefore always free from repetition</div>
+        <div class="item end">ITEM 4</div>
+    </section>
+
+    <section class="container">
+        <div class="item center">AAA</div>
+        <div class="item start">123</div>
+        <div class="item end">ITEM 4</div>
+        <div class="item stretch">Lorem Ipsum is therefore always</div>
+    </section>
+
+    <h3>Eixo Y</h3>
+    <section class="container column align-container">
+        <div class="item auto">AAA</div>
+        <div class="item auto">123</div>
+        <div class="item auto">Lorem Ipsum is therefore always free from repetition</div>
+        <div class="item auto">ITEM 4</div>
+    </section>
+
+    <section class="container column">
+        <div class="item center">AAA</div>
+        <div class="item start">123</div>
+        <div class="item stretch">Lorem Ipsum is therefore always free from repetition</div>
+        <div class="item end">ITEM 4</div>
+    </section>
+
+    <section class="container column">
+        <div class="item center">AAA</div>
+        <div class="item start">123</div>
+        <div class="item end">ITEM 4</div>
+        <div class="item stretch">Lorem Ipsum is therefore always</div>
+    </section>
+</body>
+</html>
