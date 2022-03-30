@@ -9,69 +9,222 @@
     <style>
         *{font-family:'Open Sans',sans-serif;margin:0;padding:0;}
         ul{list-style:none;margin:0;padding:0;}
-        ul li a{text-decoration:0;}
+        ul li a{text-decoration:0; color: white;}
+
+        div img{ /*responsividade das imgs*/
+            display: block;
+            width: 100%;
+        }
 
         .flex-container{
             display: flex;
-            max-width: 998px;
+            max-width: 992px;
             margin: auto;
+            width: 100%;
         }
+
+        header{
+            background-color: #122A57;
+            height: 80px;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        header .menu{
+            justify-content:space-between;
+            
+        }
+
+        header .list-items{
+            display: flex;
+            align-items: center;
+            margin-top: 5px;
+            max-width: 260px;
+            width: 100%;
+            justify-content: space-between;
+        }
+        
+        header .list-items a:hover{
+            border-bottom: 1px solid white;
+        }
+
+        .apresentacao{
+            height: 100vh;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .apresentacao .texto-apresentacao{
+            min-height: 200px;
+        }
+
+        .texto-apresentacao h1{
+            color: #122A57;
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+
+        .texto-apresentacao p{
+            margin-bottom: 10px;
+        }
+
+        .texto-apresentacao a{
+            background-color:#122A57;
+            color:white;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 30px;
+            width: 220px;
+            height: 50px;
+            line-height: 50px;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .o1{order:1;}.o2{order:2;}.o3{order:3;}
+
+        #quem-somos{
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 150px;
+        }
+
+        #quem-somos h2{
+            font-size: 32px;
+            color: #122A57;
+            display: flex;
+            margin-bottom: 20px;
+        }
+
+        #quem-somos h2::before{
+            content: "";
+            height: 40px;
+            width: 5px;
+            margin-right: 5px;
+            background-color: #122A57;
+            position: relative;
+        }
+
+        #quem-somos p{
+            margin-bottom: 10px;
+            width: 90%;
+        }
+
+        #quem-somos img{
+            min-width: 420px;
+        }
+
+        .service{
+            background-color: #122A57;
+            width: 100%;
+            color: white;
+            padding-top: 25px;
+            padding-bottom: 25px;
+        }
+
+        .service h2{
+            padding-top: 15px;
+            padding-bottom: 50px;
+            padding-left: 170px;
+            font-size: 32px;
+        }
+
+        #servicos{
+            display: flex;
+            justify-content: space-around;
+            background-color: #122A57;
+            align-items: center;
+        }
+
+        #servicos p{
+            margin-top: 30px;
+            margin-bottom: 30px;
+            font-weight: 600;
+        }
+
+        #servicos a{
+            text-decoration: none;
+            background-color: white;
+            color: #122A57;
+            display: block;
+            text-align: center;
+            line-height: 50px;
+            border-radius: 50px;
+            width: 220px;
+            height: 50px;
+            margin-bottom: 20px;
+        }
+
+        .column{
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .column p{
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
     </style>
     
 </head>
-<body>
-    <header class="flex-container">
-        <h1>XYZ Turismos</h1>
-        <ul>
-            <li><a href="#quem-somos">Quem Somos</a></li>
-            <li><a href="#servicos">Serviços</a></li>
-            <li><a href="#planos">Planos</a></li>
-        </ul>
+<body> 
+    <header>
+        <div class="flex-container menu">
+            <h1>XYZ Turismos</h1>
+                <ul class="list-items">
+                    <li><a href="#quem-somos">Quem Somos</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#planos">Planos</a></li>
+                </ul>
+        </div>
     </header>
 
-    <section class="flex-container">
-        <div>
-            <h1>XYZ <br>Turismos</h1>
+    <section class="flex-container apresentacao">
+        <div class="texto-apresentacao">
+            <h1>XYZ<br>Turismos</h1>
             <p>O melhor serviço para você!</p>
             <a href="#">Saiba Mais!</a>
         </div>
 
         <div>
-            <div><img src="./img/0-main.png" alt="banner de apresentação"></div>
+            <img src="./img/0-main.png" alt="banner de apresentação">
         </div>
     </section>
 
-    <section class="flex-container">
-        <div>
-            <img src="./img/1-quem-somos.png" alt="balcão de atendimento">
-        </div>
-
-        <div>
+    <section class="flex-container" id="quem-somos">
+        <div class="o2">
             <h2>Quem somos</h2>
             <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. </p>
             <p>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
         </div>
-    </section>
 
-    <section class="flex-container">
-        <div>
-            <h2>Serviços</h2>
+        <div class="o1">
+            <img src="./img/1-quem-somos.png" alt="balcão de atendimento">
         </div>
 
-        <div>
-            <div>
+    </section>
+
+    <section class="service">
+        
+        <h2 class="flex-container">Serviços</h2>
+
+        <div class="flex-container" id="servicos">
+            <div class="flex-container column o2">
                 <div><img src="./img/icon-2.png" alt="hospedagens"></div>
                 <p>Hospedagens</p>
                 <a href="#">Comprar Agora</a>
             </div>
 
-            <div>
+            <div class="flex-container column o1">
                <div><img src="./img/icon-1.png" alt="pacote de viagens"></div>
                <p>Pacotes de viagens</p>
                <a href="#">Comprar Agora</a>
             </div>
 
-            <div>
+            <div class="flex-container column o3">
                 <div><img src="./img/icon-3.png" alt="roteiros personalizados"></div>
                 <p>Roteiros personalizados</p>
                 <a href="#">Comprar Agora</a>
