@@ -253,9 +253,8 @@
             }
 
             #quem-somos{
-                flex-direction:column-reverse;
-                /*width: 50%; /*Nao tinha width nem margin*/
-                /*margin: auto;*/
+                flex-direction:column-reverse; /*width: 50%; /*Nao tinha width nem margin 
+                margin: auto;*/
             }
 
             #quem-somos h2{
@@ -273,10 +272,7 @@
 
             #quem-somos img{
                 width: 50%;
-                margin: auto;
-                /*
-                min-width: 320px;
-                margin: auto;*/
+                margin: auto; /*min-width: 320px;margin: auto;*/
             }
             .list-servicos{
                 flex-direction: column;
