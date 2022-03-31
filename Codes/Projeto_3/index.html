@@ -4,170 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>XYZ Turismos</title>
-    <link rel="stylesheet" href="./style.css">
-
-    <style>
-        *{font-family:'Open Sans',sans-serif;margin:0;padding:0;}
-        ul{list-style:none;margin:0;padding:0;}
-        ul li a{text-decoration:0; color: white;}
-
-        div img{ /*responsividade das imgs*/
-            display: block;
-            width: 100%;
-        }
-
-        .flex-container{
-            display: flex;
-            max-width: 992px;
-            margin: auto;
-            width: 100%;
-        }
-
-        header{
-            background-color: #122A57;
-            height: 80px;
-            color: white;
-            display: flex;
-            align-items: center;
-            justify-content: space-around;
-        }
-
-        header .menu{
-            justify-content:space-between;
-            
-        }
-
-        header .list-items{
-            display: flex;
-            align-items: center;
-            margin-top: 5px;
-            max-width: 260px;
-            width: 100%;
-            justify-content: space-between;
-        }
-        
-        header .list-items a:hover{
-            border-bottom: 1px solid white;
-        }
-
-        .apresentacao{
-            height: 100vh;
-            align-items: center;
-            justify-content: space-between;
-        }
-
-        .apresentacao .texto-apresentacao{
-            min-height: 200px;
-        }
-
-        .texto-apresentacao h1{
-            color: #122A57;
-            font-size: 48px;
-            margin-bottom: 10px;
-        }
-
-        .texto-apresentacao p{
-            margin-bottom: 10px;
-        }
-
-        .texto-apresentacao a{
-            background-color:#122A57;
-            color:white;
-            text-align: center;
-            text-decoration: none;
-            border-radius: 30px;
-            width: 220px;
-            height: 50px;
-            line-height: 50px;
-            display: block;
-            margin-bottom: 10px;
-        }
-
-        .o1{order:1;}.o2{order:2;}.o3{order:3;}
-
-        #quem-somos{
-            align-items: center;
-            justify-content: space-between;
-            margin-bottom: 150px;
-        }
-
-        #quem-somos h2{
-            font-size: 32px;
-            color: #122A57;
-            display: flex;
-            margin-bottom: 20px;
-        }
-
-        #quem-somos h2::before{
-            content: "";
-            height: 40px;
-            width: 5px;
-            margin-right: 5px;
-            background-color: #122A57;
-            position: relative;
-        }
-
-        #quem-somos p{
-            margin-bottom: 10px;
-            width: 90%;
-        }
-
-        #quem-somos img{
-            min-width: 420px;
-        }
-
-        .service{
-            background-color: #122A57;
-            width: 100%;
-            color: white;
-            padding-top: 25px;
-            padding-bottom: 25px;
-        }
-
-        .service h2{
-            padding-top: 15px;
-            padding-bottom: 50px;
-            padding-left: 170px;
-            font-size: 32px;
-        }
-
-        #servicos{
-            display: flex;
-            justify-content: space-around;
-            background-color: #122A57;
-            align-items: center;
-        }
-
-        #servicos p{
-            margin-top: 30px;
-            margin-bottom: 30px;
-            font-weight: 600;
-        }
-
-        #servicos a{
-            text-decoration: none;
-            background-color: white;
-            color: #122A57;
-            display: block;
-            text-align: center;
-            line-height: 50px;
-            border-radius: 50px;
-            width: 220px;
-            height: 50px;
-            margin-bottom: 20px;
-        }
-
-        .column{
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .column p{
-            margin-top: 10px;
-            margin-bottom: 10px;
-        }
-
-    </style>
+    <link rel="stylesheet" href="./css/main.css">
     
 </head>
 <body> 
@@ -186,7 +23,7 @@
         <div class="texto-apresentacao">
             <h1>XYZ<br>Turismos</h1>
             <p>O melhor serviço para você!</p>
-            <a href="#">Saiba Mais!</a>
+            <a class="bt" href="#">Saiba Mais!</a>
         </div>
 
         <div>
@@ -207,73 +44,85 @@
 
     </section>
 
-    <section class="service">
-        
-        <h2 class="flex-container">Serviços</h2>
-
+    <section class="container-servicos">
         <div class="flex-container" id="servicos">
-            <div class="flex-container column o2">
-                <div><img src="./img/icon-2.png" alt="hospedagens"></div>
-                <p>Hospedagens</p>
-                <a href="#">Comprar Agora</a>
-            </div>
 
-            <div class="flex-container column o1">
-               <div><img src="./img/icon-1.png" alt="pacote de viagens"></div>
-               <p>Pacotes de viagens</p>
-               <a href="#">Comprar Agora</a>
-            </div>
+            <h2 class="">Serviços</h2>
 
-            <div class="flex-container column o3">
-                <div><img src="./img/icon-3.png" alt="roteiros personalizados"></div>
-                <p>Roteiros personalizados</p>
-                <a href="#">Comprar Agora</a>
+            <div class="list-servicos">
+                <div class="item-servico o2">
+                    <div><img src="./img/icon-2.png" alt="hospedagens"></div>
+                    <p>Hospedagens</p>
+                    <a class="bt" href="#">Comprar Agora</a>
+                </div>
+
+                <div class="item-servico o1">
+                <div><img src="./img/icon-1.png" alt="pacote de viagens"></div>
+                <p>Pacotes de viagens</p>
+                <a class="bt" href="#">Comprar Agora</a>
+                </div>
+
+                <div class="item-servico o3">
+                    <div><img src="./img/icon-3.png" alt="roteiros personalizados"></div>
+                    <p>Roteiros personalizados</p>
+                    <a class="bt" href="#">Comprar Agora</a>
+                </div>
             </div>
 
         </div>
     </section>
 
-    <section class="flex-container">
+    <section class="flex-container" id="planos">
 
-        <div>
-            <h3>Plano 2</h3>
-            <ul>
-                <li>Suporte 24h</li>
-                <li>Serviços de quarto</li>
-                <li>Guia turístico</li>
-            </ul>
-            <a href="#">Saiba Mais!</a>
+        <h2>Planos</h2>
+
+        <div class="list-planos">
+            <div class="item-planos">
+                <h3>Plano 1</h3>
+                <br>
+                <ul>
+                    <li>Suporte 24h</li>
+                    <li>Serviços de quarto</li>
+                    <li>Guia turístico</li>
+                </ul>
+                <a class="bt" href="#">Saiba Mais!</a>
+            </div>
+
+            <div class="item-planos">
+                <h3>Plano 2</h3>
+                <br>
+                <ul>
+                    <li>Suporte 24h</li>
+                    <li>Serviços de quarto</li>
+                    <li>Guia turístico</li>
+                    <li>Roteiro de trilhas</li>
+                    <li>Serviço personalizado</li>
+                </ul>
+                <a class="bt" href="#">Saiba Mais!</a>
+            </div>
+
+            <div class="item-planos">
+                <h3>Plano 3</h3>
+                <br>
+                <ul>
+                    <li>Suporte 24h</li>
+                    <li>Serviços de quarto</li>
+                    <li>Guia turístico</li>
+                    <li>Roteiro de trilhas</li>
+                    <li>Serviço personalizado</li>
+                    <li>Área Vip</li>
+                </ul>
+                <a class="bt" href="#">Saiba Mais!</a>
+            </div>
         </div>
 
-        <div>
-            <h3>Plano 2</h3>
-            <ul>
-                <li>Suporte 24h</li>
-                <li>Serviços de quarto</li>
-                <li>Guia turístico</li>
-                <li>Roteiro de trilhas</li>
-                <li>Serviço personalizado</li>
-            </ul>
-            <a href="#">Saiba Mais!</a>
-        </div>
-
-        <div>
-            <h3>Plano 3</h3>
-            <ul>
-                <li>Suporte 24h</li>
-                <li>Serviços de quarto</li>
-                <li>Guia turístico</li>
-                <li>Roteiro de trilhas</li>
-                <li>Serviço personalizado</li>
-                <li>Área Vip</li>
-            </ul>
-            <a href="#">Saiba Mais!</a>
-        </div>
     </section>
 
-    <footer class="flex-container">
-        <p>&copy; 2022 CSS Flexbox</p>
-        <p>Desenvolvido por: Harrison Caetano Cândido</p>
+    <footer>
+        <div class="flex-container footer">
+            <p>&copy; 2022 XYZ Turismos</p>
+            <p>Desenvolvido por: Harrison Caetano Cândido</p>
+        </div>
     </footer>
 </body>
 </html>
