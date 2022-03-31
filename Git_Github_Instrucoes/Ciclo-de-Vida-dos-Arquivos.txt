@@ -18,6 +18,14 @@
 'git clone <url>' - Clona Repositório
 'git add <arquivo> <pasta>/' - Manda pasta e arquivo para staged
 'git rm <pasta>/<arquivo' - Remover pasta e arquivo dentro dela
+'git remote add origin' - Aponta o Local Repository para o Remote Repository
+
+____________Renomear Branch_____________
+
+'git checkout <nome>' - Navega entre branches
+'git branch -m <novo-nome>' - Renomear Branch local
+'git push origin --delete <nome> - Apagar no Remote Repository
+'git push -u origin <nome> - Leva do Local Repository para o Remote Repository
 
 #Pasta .git contém todos os versionamentos de código
 
@@ -70,10 +78,5 @@ Sendo assim, você terá que seguir os passos abaixo:
 - git commit -m "Conflito resolvido"
 
 - git push origin master
-
-__________________________________________________________________________________________________________________________________________________________________________________________
-
-					Resumo
-
 
 
