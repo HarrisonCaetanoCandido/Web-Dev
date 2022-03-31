@@ -233,19 +233,50 @@
             @media(max-width: 992px){
             .flex-container{
                 flex-direction: column;
+                align-items: center;
+                width: 50%;
+                margin: auto;
+            }
+
+            .menu{
+                min-width: 220px;
+                margin: auto;
             }
 
             .apresentacao .texto-apresentacao{
-                width:100%;
+                width: 50%;
+                margin: auto;
+            }
+
+            #quem-somos p{
+                margin-bottom: 10px;
             }
 
             #quem-somos{
                 flex-direction:column-reverse;
+                /*width: 50%; /*Nao tinha width nem margin*/
+                /*margin: auto;*/
+            }
+
+            #quem-somos h2{
+                width: 50%;
+                margin: auto;
+                margin-top: 100px;
+                margin-bottom: 20px;
+            }
+
+            #quem-somos p{
+                margin-bottom: 60px;
+                margin: auto;
+                width: 40%;
             }
 
             #quem-somos img{
-                min-width: 320px;
+                width: 50%;
                 margin: auto;
+                /*
+                min-width: 320px;
+                margin: auto;*/
             }
             .list-servicos{
                 flex-direction: column;
@@ -254,11 +285,16 @@
             .item-servico img{
                 width: 50%;
                 margin: auto;
+                margin-bottom: 30px;
+            }
+
+            .item-servico .bt{
+                margin-bottom: 30px;
             }
 
             .list-planos{
                 flex-direction: column;
-                align-items: flex-start;
+                align-items: center;
                 margin-bottom:20px;
             }
 
