@@ -1,7 +1,18 @@
 *{font-family:'Open Sans',sans-serif;margin:0;padding:0;}
 a{text-decoration: none;}
 ul{list-style:none;}
-header{display:flex;align-items:center;width: 100%;background-color:#774936; color: white;height:80px;} /*99582a*/
+header{display:flex;align-items:center;width:100%;/*background:#00000080;/*background-color:#774936;*/color:white;height:80px;/*position:fixed;*/} /*#774936*/
+
+.bt{
+    display: block;
+    background-color: #00000080;
+    color:white;
+    width: 100px;
+    height:25px;
+    line-height: 25px;
+    text-align: center;
+    border-radius: 50px;
+}
 
 .flex-container{
     display: flex;
@@ -35,7 +46,9 @@ header{display:flex;align-items:center;width: 100%;background-color:#774936; col
 .introducao{
     display:flex;
     height: 100vh;
-    align-items: center;
+    flex-direction:column;
+    justify-content: center;
+    /*align-items: center;*/
     background-image: url("../img/pexels-sobremim.png");
     color:white;
 }
@@ -76,16 +89,78 @@ header{display:flex;align-items:center;width: 100%;background-color:#774936; col
 }
 
 #about-me{ /*container-apresentacao*/
-    height: 50vh;
+    height: 40vh;
 }
 
 .flex-container-apresentacao{
-    margin-top: 50px;
+    margin-top: 30px;
     flex-direction: column;
     max-width: 600px;
     width:100%;
 }
 
 .flex-container-apresentacao h2{
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    color: #621708;
+}
+
+#portfolio{
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}/*.portfolio-titulo{justify-content: center;}.portfolio-titulo h2{color:#621708;}*/
+
+.list-projects{
+    flex-direction: column;
+    align-items: center;
+}
+
+.titulo-top-proj{display:flex;width:100%;justify-content: center;align-items:center;color:white;background-image: url("../img/pexels-sobremim.png");height:150px;}
+
+.top-projects{
+    justify-content: space-around;
+}
+
+.itop-projects{
+    color: white;
+    padding: 10px;
+    max-width: 240px;
+    margin-right: 10px;
+    flex:2;
+    margin-bottom:20px;
+}
+
+.itop-projects h4{
+    margin-bottom:10px;
+}
+
+.itop-projects p{
+    margin-bottom:10px;
+}
+
+.IMTRP{
+    flex-direction: column;
+    background-color: #621708;
+    border: 1px solid #bc3908;
+}
+
+.ADP{
+    flex-direction: column;
+    background-color: #941b0c;
+}
+
+.SGI{
+    flex-direction: column;
+    background-color: #bc3908;
+}
+
+.CDA{
+    flex-direction: column;
+    background-color: #f6aa1c;
+}
+
+.sombra-tprojects:hover{
+    transition: 0.5s;
+    opacity: 0.7;
 }
