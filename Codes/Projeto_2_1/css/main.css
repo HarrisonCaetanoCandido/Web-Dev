@@ -101,7 +101,7 @@ header{display:flex;align-items:center;width:100%;/*background:#00000080;/*backg
 
 .flex-container-apresentacao h2{
     margin-bottom: 20px;
-    color: #621708;
+    color: #000000;
 }
 
 #portfolio{
@@ -241,7 +241,7 @@ header{display:flex;align-items:center;width:100%;/*background:#00000080;/*backg
 
 .container-contact{
     display:flex;
-    background-image: url("../img/pexels-sobremim.png");
+    background-image: url("../img/ft-contact.jpg");
     color: whitesmoke;
     height:50vh;
     align-items: center;
@@ -317,10 +317,15 @@ footer{
 
 .ftexto{
     display:flex;
-    justify-content:flex-end;
+    max-width:1100px;
+    justify-content: space-between;
     padding: 10px;
 }
 
 .ftexto p{
     font-size:15px;
+}
+
+.ftexto a{
+    color:lightseagreen;
 }
