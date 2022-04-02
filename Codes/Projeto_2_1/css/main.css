@@ -1,12 +1,12 @@
 *{font-family:'Open Sans',sans-serif;margin:0;padding:0;}
 a{text-decoration: none;}
 ul{list-style:none;}
-header{display:flex;align-items:center;width:100%;/*background:#00000080;/*background-color:#774936;*/color:white;height:80px;/*position:fixed;*/} /*#774936*/
+header{display:flex;align-items:center;width:100%;/*background:#00000080;/*background-color:#774936;*/color:whitesmoke;height:80px;/*position:fixed;*/} /*#774936*/
 
 .bt{
     display: block;
     background-color: #00000080;
-    color:white;
+    color:whitesmoke;
     width: 100px;
     height:25px;
     line-height: 25px;
@@ -35,8 +35,9 @@ header{display:flex;align-items:center;width:100%;/*background:#00000080;/*backg
 }
 
 .menu-nav-bar a{
-    color: white;
+    color: whitesmoke;
 }
+
 .menu-nav-bar a:hover{
     color: #9C9C9C; 
     transition: 0.5s;
@@ -48,9 +49,8 @@ header{display:flex;align-items:center;width:100%;/*background:#00000080;/*backg
     height: 100vh;
     flex-direction:column;
     justify-content: center;
-    /*align-items: center;*/
     background-image: url("../img/pexels-sobremim.png");
-    color:white;
+    color:whitesmoke;
 }
 
 .flex-container-introducao{
@@ -88,7 +88,7 @@ header{display:flex;align-items:center;width:100%;/*background:#00000080;/*backg
     margin-bottom:10px;
 }
 
-#about-me{ /*container-apresentacao*/
+#about-me{ 
     height: 40vh;
 }
 
@@ -105,30 +105,35 @@ header{display:flex;align-items:center;width:100%;/*background:#00000080;/*backg
 }
 
 #portfolio{
-    height: 100vh;
+    height: 120vh;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}/*.portfolio-titulo{justify-content: center;}.portfolio-titulo h2{color:#621708;}*/
+    flex:2;
+}
 
 .list-projects{
     flex-direction: column;
     align-items: center;
 }
 
-.titulo-top-proj{display:flex;width:100%;justify-content: center;align-items:center;color:white;background-image: url("../img/pexels-sobremim.png");height:150px;}
+.titulo-top-proj{display:flex;width:100%;justify-content: center;align-items:center;color:whitesmoke;background-image: url("../img/pexels-sobremim.png");height:150px;}
 
 .top-projects{
     justify-content: space-around;
+    margin-bottom: 50px;
 }
 
 .itop-projects{
-    color: white;
-    padding: 10px;
+    display: flex;
+    flex-direction: column;
     max-width: 240px;
     margin-right: 10px;
     flex:2;
+    padding:10px;
     margin-bottom:20px;
+    color: whitesmoke;
+    justify-content: space-between;
 }
 
 .itop-projects h4{
@@ -140,27 +145,88 @@ header{display:flex;align-items:center;width:100%;/*background:#00000080;/*backg
 }
 
 .IMTRP{
-    flex-direction: column;
     background-color: #621708;
-    border: 1px solid #bc3908;
 }
 
-.ADP{
-    flex-direction: column;
-    background-color: #941b0c;
+.IMTRP img{
+    align-self:center;
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
 
-.SGI{
-    flex-direction: column;
-    background-color: #bc3908;
+.ADP{background-color: #941b0c;}
+
+.ADP img{
+    align-self:center;
+    margin-top: 5px;
+    margin-bottom: 8px;
 }
 
-.CDA{
-    flex-direction: column;
-    background-color: #f6aa1c;
+.SGI{background-color: #bc3908;}
+
+.SGI img{align-self: center;}
+
+.CDA{background-color: #f6aa1c;}
+
+.CDA img{
+    align-self: center;
+    margin-top: 3px;
+    margin-bottom: 3px;
 }
 
 .sombra-tprojects:hover{
     transition: 0.5s;
     opacity: 0.7;
+}
+
+.timeline{
+    display:flex;
+    flex-direction: column;
+    width:100%;
+}
+
+.timeline h2{
+    align-self: center;
+    margin-bottom: 20px;
+}
+
+.scitec{
+    justify-content: space-between;
+    margin-right:10px;
+    /*background-color: #00000080;colorwhitesmoke;*/
+    padding: 15px;
+}
+
+.scitec p{
+    margin-right:20px;
+    align-self: center;
+    font-size: 13px;
+    font-weight: 600;
+    margin:0;
+    padding:0;
+}
+
+.scitec img{
+    margin-right:20px;
+    align-self: center;
+}
+
+.scitec div{
+    margin-right:20px;
+}
+
+.scitec-circle{
+    border-radius: 50px;
+}
+
+.img-texto-scitec{
+    display:flex;
+    padding: 10px;
+}
+
+.itimeline{
+    display: flex;
+    flex:4;
+    flex-direction:column;
+    width:50%;
 }
