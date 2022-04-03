@@ -272,7 +272,6 @@ header{display:flex;align-items:center;width:100%;/*background:#00000080;/backgr
     align-self: center;
     font-size: 13px;
     font-weight: 600;
-    margin-right:10px;;
     padding:0;
 }
 
@@ -369,32 +368,76 @@ textarea{
 .container-contact{
     display:flex;
     color: whitesmoke;
-    align-items: center;
+    /*align-items: center;*/
     max-width:500px;
     width: 100%;
     padding:10px;
+    height:500px;
 }
 
 .contact{
     flex-direction: column;
+    max-width:500px;
+    align-items: center;
+    height:500px;
+    padding: 15px;
+    /*justify-content:space-between;*/
+}
+
+.contact h2{
+    margin-bottom:10px;
+    font-size: 32px;
+    align-self: flex-start;
+    border-bottom: 1px solid #00acff;
+}
+
+.text-forms{
+    margin-bottom: 100px;
+}
+
+.text-forms p{
+    font-size:20px;
+}
+
+.socialmedia{
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    width: 100%;
+    margin-bottom: 50px;
+    justify-content: center;
     align-items: center;
 }
 
-.contact p{
+.socialmedia h4{
     font-weight: 600;
-    font-size: 20px;
-    margin-bottom: 50px;
+    font-size: 24px;
+    /*margin-bottom: 50px;*/
+    align-self: center;
+    margin: 50px;
 }
 
 .icontact{
     display:flex;
-    justify-content: space-between;
+    /*justify-content: space-between;/* Tem que redimensionar os icones e deixa-los com tamanho padronizado*/
+    max-width: 500px;
+    max-height: 200px;
+    justify-content:space-between;
 }
 
 .icontact a{
     color: whitesmoke;
-    margin-right: 10px;
+    margin-right: 30px;
 }
+
+.icontact li{
+    margin:0;
+    padding:0;
+}
+
+.s-insta{align-self: flex-end;}
+
+.s-email{align-self: flex-end;}
 
 .bt-forms{
     width: 500px;
