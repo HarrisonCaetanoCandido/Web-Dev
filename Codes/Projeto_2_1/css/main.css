@@ -1,7 +1,7 @@
 *{font-family:'Open Sans',sans-serif;margin:0;padding:0;}
 a{text-decoration: none;}
 ul{list-style:none;}
-header{display:flex;align-items:center;width:100%;/*background:#00000080;/background-color:rgba(0, 0, 0, 0.90);*/color:whitesmoke;height:60px;/*position:fixed;*/} /*#774936*/
+header{display:flex;align-items:center;width:100%;/*background:#00000080;*//*background-color:rgba(0, 0, 0, 0.90);*/color:whitesmoke;height:60px;/*position:fixed;*/} /*#774936*/
 .o1{order:1;}.o2{order:2;}
 
 .bt{
@@ -44,29 +44,8 @@ header{display:flex;align-items:center;width:100%;/*background:#00000080;/backgr
 }
 
 .menu-nav-bar a:hover{
-    /*color: #9C9C9C;*/
-    border-bottom: 1px solid #00acff; 
-    /*transition: 0.5s;
-    opacity: 0.7;*/
-}
-/*
-.bt-nav-norm a{
-    color: whitesmoke;
-}
-
-.bt-nav-norm a:hover{
     border-bottom: 1px solid #00acff; 
 }
-
-.bt-nav{
-    display: block;
-    width: 90px;
-    height: 25px;
-    background-color: #00acff;
-    text-align: center;
-    line-height: 25px;
-    border-radius: 5px;
-}*/
 
 .introducao{
     display:flex;
@@ -116,6 +95,10 @@ header{display:flex;align-items:center;width:100%;/*background:#00000080;/backgr
     height: 40vh;
     background-color: white;
     color: rgba(0, 0, 0, 0.90);
+}
+
+.c-about{
+    flex-direction:column;
 }
 
 .apresentacao-titulo{
@@ -337,7 +320,6 @@ header{display:flex;align-items:center;width:100%;/*background:#00000080;/backgr
     padding:15px;
     background-color: rgba(0, 0, 0, 0.87);
     height: 500px;
-    /*flex-wrap:wrap;*/
     box-shadow: 0 0 1em #00000080;
     border-radius: 5px;
 }
@@ -513,4 +495,134 @@ footer{
 
 .ftexto a{
     color:#00acff;
+}
+
+@media(max-width:880px){
+    
+    .flex-container{
+        flex-direction: column;
+        align-items:center;
+        margin: auto;
+    }
+
+    .introducao{
+        width:100%;
+    }
+
+    .nav-bar{
+        align-items:center;
+        width:50%;
+        flex:2;
+    }
+
+    .nav-bar h2{
+        font-size: 16px;
+    }
+
+    .menu-nav-bar li{
+        font-size:12px;
+    }
+
+    .flex-container-introducao{
+        align-items: center;
+        margin:auto;
+    }
+
+    .flex-container-introducao h2{
+        font-size: 18px;
+    }
+
+    .flex-container-introducao p{
+        font-size: 14px;
+    }
+
+    .itens-contato-introducao{
+        max-width: 220px;
+    }
+
+    #about-me{
+        display:flex;
+        justify-content: center;
+        height:250px;
+    }
+
+    .apresentacao-titulo{
+        margin-top:30px;
+    }
+
+    .apresentacao-titulo h2{
+        align-self:flex-start;
+    }
+
+    .c-about{
+        display: flex;
+        flex-direction: column;
+        max-width:320px;
+        width:70%;
+        align-items: center;
+    }
+
+    .flex-container-apresentacao p{
+        margin-bottom:20px;
+    }
+
+    #portfolio{
+        height:200vh;
+    }
+
+    #timeline{
+        height:190vh;
+    }
+
+    .timelines{
+        align-items: flex-start;
+    }
+
+    .timelines p{
+        text-align: start;
+        margin-bottom:10px;
+    }
+
+    .t-data{
+        color:#00acff;
+    }
+
+    .itimeline h3{
+        margin-bottom: 10px;
+    }
+
+    .itimeline h4{
+        margin-bottom: 3px;
+    }
+
+    #contact-me{
+        height:200vh;
+        align-items:center;
+    }
+
+    #contact-me main{
+        height:150vh;
+        max-width: 290px;
+        padding: 15px;
+    }
+
+    .container-contact p{
+        padding: 10px;
+    }
+
+    .bt-forms{
+        max-width:300px;
+    }
+
+    .socialmedia{
+        max-width:300px;
+    }
+
+    .socialmedia h4{
+        font-size: 22px;
+    }
+
+    footer p{
+        margin-bottom:10px;
+    }
 }
