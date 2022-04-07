@@ -827,6 +827,7 @@ footer{
         align-items: center;
         margin:auto;
     }
+    .rounded-circle{width:70px;height:70px;}
     .flex-container-introducao .rounded-circle{width:70px;height:px;margin-top:10px;}
     .flex-container-introducao h2{font-size: 18px;}
     .flex-container-introducao p{font-size: 14px;}
