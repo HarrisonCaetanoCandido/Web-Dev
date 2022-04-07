@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet"  href="./css/IMTRP.css">
+    <link rel="stylesheet"  href="./css/proj.css">
     <link rel="stylesheet" href="./css/main.css">
     <title>Industrial Material Transport Robot Prototype - Harrison's Resume</title>
 </head>
@@ -20,10 +20,9 @@
             </ul>
         </main>
     </header>
-
         <section id="IMTRP-apresentacao">
             <div class="IMTRP-titulo">
-                <h2>Industrial Material Robot Prototype</h2>
+                <h2>Industrial Material Transport Robot Prototype</h2>
                 </div>
                     <div class="flex-container IMTRP-proj">
                         <div class="IMTRP-ft-fonte"><img src="./img/Robo_arduino.png" widht="500px" height="300px">
@@ -133,23 +132,17 @@
                                         <h2>Source Code</h2>
                                         </div>
                                         <div class="flex-container IMTRP-proj">
-                                            <p class="source-code">
-                                               
-
+                                            <p class="source-code"> 
                                                 Note: This is the most updated version that i found in the pendrive, as soon as possible i will provide the final version
                                                 used at the presentation<br><br>
-                                               
-
                                                 #include <Ultrasonic.h><br>
                                                 #include <Servo.h><br>
                                                 #define pino_trigger 9 //Top sensor<br>
                                                 #define pino_echo 8<br>
                                                 #define leed 7<br><br>
-                                                
                                                 #define pino_triggger 12 //Bottom sensor<br>
                                                 #define pino_eccho 11<br>
                                                 #define led 13<br><br>
-
                                                 //Arduino's pins connected to H bridge input<br>
                                                 int val; <br>
                                                 int ChaveEsquerda;<br>
@@ -163,12 +156,9 @@
                                                 //Initialize the sensor on the defined pins above<br>
                                                 Ultrasonic ultrasonic(pino_trigger, pino_echo);<br>
                                                 Ultrasonic ultrasonic2(pino_triggger, pino_eccho);<br><br>
-
                                                 void setup()<br>
                                                 {<br><br>
-                                                
-                                                Serial.begin(115200);<br><br>
-                                                
+                                                Serial.begin(115200);<br><br> 
                                                 Serial.println("Lendo dados do sensor...");<br>
                                                 //Define the pins as output<br>
                                                 pinMode(IN1, OUTPUT);<br>
@@ -185,13 +175,10 @@
                                                     pinMode(ChaveDireita, INPUT);  <br>
                                                     digitalWrite(ChaveDireita, HIGH);<br>
                                                 }<br><br>
-
                                                 void loop()<br>
                                                 {<br>
                                                 //Scan the sensor's informations in cm and pol<br><br>
-
                                                 float cmMsec1,cmMsec2,inMsec1, inMsec2;<br><br>
-                                                
                                                 long microsec1 = ultrasonic.timing();<br>
                                                 cmMsec1 = ultrasonic.convert(microsec1, Ultrasonic::CM);<br>
                                                 inMsec1 = ultrasonic.convert(microsec1, Ultrasonic::IN);<br>
@@ -211,7 +198,6 @@
                                                 Serial.print(" - Distancia em polegadas sensor de altura (2): ");<br>
                                                 Serial.println(inMsec2);<br>
                                                 delay(100);<br><br>
-                                                
                                                 if((cmMsec1) >= 20){<br>
                                                 //Spin the two Engines to the clockwise<br>
                                                 digitalWrite(IN1, HIGH);<br>
@@ -220,7 +206,6 @@
                                                 digitalWrite(IN3, LOW);<br>
                                                 digitalWrite(IN4, HIGH);<br>
                                                 digitalWrite(leed, LOW);<br><br>
-                                                
                                                 }<br>
                                                 if((cmMsec1) < 20){ //Scan the distance variable<br>
                                                 //Para os Motores A e B<br>
@@ -230,7 +215,6 @@
                                                 digitalWrite(IN4, HIGH);<br>
                                                 digitalWrite(leed, HIGH);<br>
                                                 delay(500);<br><br>
-                                                
                                                 myservo.write(45);<br>
                                                 delay(500); <br>
                                                 myservo.write(-100);<br>
@@ -239,21 +223,18 @@
                                                 delay(500);<br>
                                                 myservo.write(45);<br>
                                                 delay(500);<br><br>
-
                                                 digitalWrite(IN1, LOW); // Reverse movement<br>
                                                 digitalWrite(IN2, HIGH);<br>
                                                 //motor b<br>
                                                 digitalWrite(IN3, HIGH);<br>
                                                 digitalWrite(IN4, LOW);<br>
                                                 delay(500);<br><br>
-                                                
                                                 digitalWrite(IN1, HIGH);  //Turn left<br>
                                                 digitalWrite(IN2, LOW);<br>
                                                 digitalWrite(IN3, HIGH);<br>
                                                 digitalWrite(IN4, HIGH);<br>
                                                 delay(100);<br>
                                                 digitalWrite(leed, HIGH);<br><br>
-                                                
                                                 }<br>
                                                 if((cmMsec2) >= 5){ //prints the distance variable<br>
                                                 //Para os Motores A e B<br>
@@ -263,20 +244,17 @@
                                                 digitalWrite(IN4, HIGH);<br>
                                                 digitalWrite(led, HIGH);<br>
                                                 delay(500);<br><br>
-                                                
                                                 digitalWrite(IN1, LOW); // Reverse movement<br>
                                                 digitalWrite(IN2, HIGH);<br>
                                                 //motor b<br>
                                                 digitalWrite(IN3, HIGH);<br>
                                                 digitalWrite(IN4, LOW);<br>
                                                 delay(500);<br><br>
-                                                
                                                 digitalWrite(IN1, HIGH);<br>
                                                 digitalWrite(IN2, HIGH);<br>
                                                 digitalWrite(IN3, HIGH);<br>
                                                 digitalWrite(IN4, HIGH);<br>
                                                 delay(100);<br><br>
-                                                
                                                 digitalWrite(IN1, HIGH);  //Turn left<br>
                                                 digitalWrite(IN2, LOW);<br>
                                                 digitalWrite(IN3, HIGH);<br>
@@ -295,10 +273,28 @@
                                                 }
                                             </p>
                                         </div>
+                                        <div class="IMTRP-titulo">
+                                            <h2>References</h2>
+                                            </div>
+                                            <div class="flex-container IMTRP-proj">
+                                                <p class="source-code references">
+                                                    "Robô Autônomo Básico" Arduino portal.2019-2019.<br>
+                                                    Consulted in 23/09/2019. Available on the internet at:<br><
+                                                    <a href="http://portaldoarduino.com.br/robo-autonomo-basico-com-sens
+                                                    or-ultrassonico-hc-sr04/" target="blank_">http://portaldoarduino.com.br/robo-autonomo-basico-com-sens
+                                                    or-ultrassonico-hc-sr04/</a> ><br>
+                                                    "Universo Robôs" at Marlon Nardi, Youtube..2017-2019.<br>
+                                                    Consulted in 23/09/2019. Available on the internet at:<br><
+                                                    <a href="https://www.youtube.com/watch?v=saHiPjBxIR8" target="blank_">https://www.youtube.com/watch?v=saHiPjBxIR8</a> ><br>
+                                                    "Robô Autônomo SR2" em Seu Robô., 2019-2019.<br>Consulted
+                                                    in 23/09/2019. Available on the internet at:<br><
+                                                    <a href="https://seurobo.com.br/robo-autonomo-sr-2-o-robo-autonomomais-eficiente-com-arduino-uno-e-ponte-h-l298n/" target="blank_">
+                                                        https://seurobo.com.br/robo-autonomo-sr-2-o-robo-autonomomais-eficiente-com-arduino-uno-e-ponte-h-l298n/
+                                                    </a> >
 
-                                    
-        </section>
-    
+                                                </p>
+                                            </div>   
+                                    </section>
     <section id="sitemap">
         <div class="flex-container clsitemap">
             <div class="c-sitemap">
@@ -311,7 +307,6 @@
             </div>
         </div>
     </section>
-
     <footer>
         <div class="flex-container ftexto">
             <p>&copy; 2022 Harrison Caetano Cândido</p>

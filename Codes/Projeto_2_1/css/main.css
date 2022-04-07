@@ -1,8 +1,9 @@
 *{font-family:'Open Sans',sans-serif;margin:0;padding:0;}
 a{text-decoration: none;}
 ul{list-style:none;}
-header{display:flex;align-items:center;width:100%;/*background:#00000080;*//*background-color:rgba(0, 0, 0, 0.90);*/color:whitesmoke;height:60px;/*position:fixed;*/} /*#774936*/
+header{display:flex;align-items:center;width:100%;color:whitesmoke;height:60px;}
 .o1{order:1;}.o2{order:2;}
+body{overflow-x: hidden;}
 
 .bt{
     display: block;
@@ -53,6 +54,9 @@ header{display:flex;align-items:center;width:100%;/*background:#00000080;*//*bac
     flex-direction:column;
     justify-content: center;
     background-image: url("../img/pexels-sobremim.png");
+    background-size:cover;
+    background-position: center;
+    background-repeat:no-repeat;
     color:whitesmoke;
 }
 
@@ -350,7 +354,6 @@ textarea{
 .container-contact{
     display:flex;
     color: whitesmoke;
-    /*align-items: center;*/
     max-width:500px;
     width: 100%;
     padding:10px;
@@ -363,7 +366,6 @@ textarea{
     align-items: center;
     height:500px;
     padding: 15px;
-    /*justify-content:space-between;*/
 }
 
 .contact h2{
@@ -394,14 +396,12 @@ textarea{
 .socialmedia h4{
     font-weight: 600;
     font-size: 24px;
-    /*margin-bottom: 50px;*/
     align-self: center;
     margin: 50px;
 }
 
 .icontact{
     display:flex;
-    /*justify-content: space-between;/* Tem que redimensionar os icones e deixa-los com tamanho padronizado*/
     max-width: 500px;
     max-height: 200px;
     justify-content:space-between;
@@ -436,7 +436,7 @@ textarea{
 #sitemap{
     display:flex;
     align-items: center;
-    background-color:rgba(0, 0, 0, 0.87); /*rgba(0, 0, 0, 0.87); | #1b1b1b*/
+    background-color:rgba(0, 0, 0, 0.87);
     color: whitesmoke;
     height: 190px;
 }
@@ -496,64 +496,126 @@ footer{
 .ftexto a{
     color:#00acff;
 }
-
-@media(max-width:880px){
-    
+@media(min-width:50px) and (max-width:199px){
     .flex-container{
         flex-direction: column;
         align-items:center;
         margin: auto;
+        max-width:199px;
     }
-
-    .introducao{
+    .introducao{width:100%;}
+    .nav-bar{
+        align-items:center;
         width:100%;
+        flex:2;
     }
-
+    .nav-bar h2{font-size: 16px;}
+    .menu-nav-bar{flex-wrap: wrap;}
+    .menu-nav-bar li{font-size:12px;margin-top:5px;margin-bottom:10px;}
+    .flex-container-introducao{
+        align-items: center;
+        margin:auto;
+        text-align: center;
+    }
+    .rounded-circle{width:50px;height:50px;}
+    .flex-container-introducao h2{font-size: 14px;}
+    .flex-container-introducao p{font-size: 12px;margin-bottom:15px;}
+    .itens-contato-introducao{max-width: 199px;flex-wrap:wrap;}
+    #about-me{
+        display:flex;
+        justify-content: center;
+        height:500px;
+    }
+    .apresentacao-titulo{margin-top:30px;}
+    .apresentacao-titulo h2{align-self:flex-start;font-size:18px;text-align: center;}
+    .c-about{
+        display: flex;
+        flex-direction: column;
+        max-width:199px;
+        width:70%;
+        align-items: center;
+    }
+    .flex-container-apresentacao p{margin-bottom:20px;font-size:12px;text-align: center;}
+    #portfolio{height:1500px;}
+    .titulo-top-proj h2{font-size:15px;text-align:center;}
+    .bt{width:50px;font-size:9px;}
+    .itop-projects{width:50%;}
+    .itop-projects p{text-align:center;font-size:10px;}
+    .itop-projects h4{font-size:11px;text-align: center;}
+    #timeline{text-align:center;height:1400px;}
+    .timelines{
+        align-items: center;
+        margin:0;
+        padding:0;
+    }
+    .titulo-timeline{font-size:10px;}
+    .img-texto{
+        flex:2;
+        flex-direction:column;
+        justify-content: center;
+        margin:0;
+        padding:0;
+    }
+    .timeline-circle{margin-bottom: 20px;}
+    .timelines p{
+        margin-right:12px;
+        margin-bottom:10px;
+        font-size:10px;
+        
+    }
+    .t-data{color:#00acff;}
+    .itimeline h3{margin-bottom: 10px;font-size:12px;margin-right:12px;}
+    .itimeline h4{margin-bottom: 3px;font-size:10px;margin-right:12px;}
+    #contact-me{
+        height:1400px;
+        align-items:center;
+    }
+    .contact h2{font-size: 16px;}
+    #contact-me main{
+        height:1160px;
+        max-width: 199px;
+        padding: 5px;
+    }
+    .forms{margin-top: 150px;}
+    .text-forms{margin-right:18px;}
+    .container-contact p{padding: 10px;font-size:10px;text-align:center;}
+    .icontact{flex-direction: column;margin-top:0;}
+    .bt-forms{max-width:199px;}
+    .socialmedia{max-width:300px;margin-bottom:100px;}
+    .socialmedia h4{font-size: 16px;margin-left:20px;}
+    #sitemap{max-width:199px;height:230px;justify-items: center;}
+    .c-sitemap{margin-right:40px;}
+    footer p{margin-bottom:10px;}
+}
+@media(min-width:200px) and (max-width:309px){
+    .flex-container{
+        flex-direction: column;
+        align-items:center;
+        margin: auto;
+        max-width:309px;
+    }
+    .introducao{width:100%;}
     .nav-bar{
         align-items:center;
         width:50%;
         flex:2;
     }
-
-    .nav-bar h2{
-        font-size: 16px;
-    }
-
-    .menu-nav-bar li{
-        font-size:12px;
-    }
-
+    .nav-bar h2{font-size: 16px;}
+    .menu-nav-bar li{font-size:12px;}
     .flex-container-introducao{
         align-items: center;
         margin:auto;
     }
-
-    .flex-container-introducao h2{
-        font-size: 18px;
-    }
-
-    .flex-container-introducao p{
-        font-size: 14px;
-    }
-
-    .itens-contato-introducao{
-        max-width: 220px;
-    }
-
+    .flex-container-introducao h2{font-size: 18px;}
+    .flex-container-introducao p{font-size: 14px;}
+    .itens-contato-introducao{max-width: 220px;}
     #about-me{
         display:flex;
         justify-content: center;
-        height:250px;
+        height:350px;
     }
-
-    .apresentacao-titulo{
-        margin-top:30px;
-    }
-
-    .apresentacao-titulo h2{
-        align-self:flex-start;
-    }
-
+    .apresentacao-titulo{margin-top:30px;}
+    .apresentacao-titulo h2{align-self:flex-start;}
     .c-about{
         display: flex;
         flex-direction: column;
@@ -561,68 +623,578 @@ footer{
         width:70%;
         align-items: center;
     }
-
-    .flex-container-apresentacao p{
-        margin-bottom:20px;
+    .flex-container-apresentacao p{margin-bottom:20px;}
+    #portfolio{height:1300px;}
+    #timeline{height:1600px;}
+    .timelines{align-items: flex-start;}
+    .img-texto{
+        flex:2;
+        flex-direction:column;
     }
-
-    #portfolio{
-        height:200vh;
-    }
-
-    #timeline{
-        height:190vh;
-    }
-
-    .timelines{
-        align-items: flex-start;
-    }
-
+    .timeline-circle{margin-bottom: 20px;}
     .timelines p{
-        text-align: start;
+        margin-right: 53px;
         margin-bottom:10px;
     }
-
-    .t-data{
-        color:#00acff;
-    }
-
-    .itimeline h3{
-        margin-bottom: 10px;
-    }
-
-    .itimeline h4{
-        margin-bottom: 3px;
-    }
-
+    .t-data{color:#00acff;}
+    .itimeline h3{margin-bottom: 10px;}
+    .itimeline h4{margin-bottom: 3px;}
     #contact-me{
-        height:200vh;
+        height:1300px;
         align-items:center;
     }
-
     #contact-me main{
-        height:150vh;
+        height:1100px;
+        max-width: 210px;
+        padding: 15px;
+    }
+    .contact h2{
+        font-size: 24px;
+        align-self: center;
+    }
+    .container-contact p{
+        padding: 10px;
+        font-size: 16px;
+    }
+    .forms{margin-top:80px;}
+    .bt-forms{max-width:200px;}
+    .socialmedia{max-width:250px;}
+    .icontact{
+        flex-wrap:wrap;
+        justify-content: center;
+    }
+    .socialmedia h4{font-size: 20px;}
+    footer p{margin-bottom:10px;}
+}
+@media(min-width:310px) and (max-width:369px){
+    .flex-container{
+        flex-direction: column;
+        align-items:center;
+        margin: auto;
+    }
+    .introducao{width:100%;}
+    .nav-bar{
+        align-items:center;
+        width:50%;
+        flex:2;
+    }
+    .nav-bar h2{font-size: 16px;}
+    .menu-nav-bar li{font-size:12px;}
+    .flex-container-introducao{
+        align-items: center;
+        margin:auto;
+    }
+    .flex-container-introducao h2{font-size: 18px;}
+    .flex-container-introducao p{font-size: 14px;}
+    .itens-contato-introducao{max-width: 220px;}
+    #about-me{
+        display:flex;
+        justify-content: center;
+        height:250px;
+    }
+    .apresentacao-titulo{margin-top:30px;}
+    .apresentacao-titulo h2{align-self:flex-start;}
+    .c-about{
+        display: flex;
+        flex-direction: column;
+        max-width:320px;
+        width:70%;
+        align-items: center;
+    }
+    .flex-container-apresentacao p{margin-bottom:20px;}
+    #portfolio{height:1300px;}
+    #timeline{height:1300px;}
+    .timelines{
+        align-items: center;
+        margin:0;
+    }
+    .img-texto{
+        flex:2;
+        flex-direction:column;
+        justify-content: center;
+    }
+    .timeline-circle{margin-bottom: 20px;}
+    .timelines p{
+        margin-right:40px;
+        margin-bottom:10px;
+    }
+    .t-data{color:#00acff;}
+    .itimeline h3{margin-bottom: 10px;}
+    .itimeline h4{margin-bottom: 3px;}
+    #contact-me{
+        height:1200px;
+        align-items:center;
+    }
+    #contact-me main{
+        height:1000px;
         max-width: 290px;
         padding: 15px;
     }
+    .container-contact p{padding: 10px;}
+    .bt-forms{max-width:300px;}
+    .socialmedia{max-width:300px;}
+    .socialmedia h4{font-size: 22px;}
+    footer p{margin-bottom:10px;}
+}
+@media(min-width:370px) and (max-width:480px){
 
-    .container-contact p{
-        padding: 10px;
+    .flex-container{
+        flex-direction: column;
+        align-items:center;
+        margin: auto;
+        max-width:480px;
     }
-
-    .bt-forms{
-        max-width:300px;
+    .introducao{width:100%;}
+    .nav-bar{
+        align-items:center;
+        width:50%;
+        flex:2;
     }
-
-    .socialmedia{
-        max-width:300px;
+    .nav-bar h2{font-size: 16px;}
+    .menu-nav-bar li{font-size:12px;}
+    .flex-container-introducao{
+        align-items: center;
+        margin:auto;
     }
-
-    .socialmedia h4{
-        font-size: 22px;
+    .flex-container-introducao h2{font-size: 18px;}
+    .flex-container-introducao p{font-size: 14px;}
+    .itens-contato-introducao{max-width: 220px;}
+    #about-me{
+        display:flex;
+        justify-content: center;
+        height:250px;
     }
-
-    footer p{
+    .apresentacao-titulo{margin-top:30px;}
+    .apresentacao-titulo h2{align-self:flex-start;}
+    .c-about{
+        display: flex;
+        flex-direction: column;
+        max-width:320px;
+        width:70%;
+        align-items: center;
+    }
+    .flex-container-apresentacao p{margin-bottom:20px;}
+    #portfolio{height:1200px;}
+    #timeline{height:1200px;}
+    .timelines{
+        align-items: center;
+        margin:0;
+    }
+    .img-texto{
+        flex:2;
+        flex-direction:column;
+        justify-content: center;
+    }
+    .timeline-circle{margin-bottom: 20px;}
+    .timelines p{
+        margin-right:40px;
         margin-bottom:10px;
     }
+    .t-data{color:#00acff;}
+    .itimeline h3{margin-bottom: 10px;}
+    .itimeline h4{margin-bottom: 3px;}
+    #contact-me{
+        height:1200px;
+        align-items:center;
+    }
+    #contact-me main{
+        height:1000px;
+        max-width: 290px;
+        padding: 15px;
+    }
+    .container-contact p{padding: 10px;}
+    .bt-forms{max-width:300px;}
+    .socialmedia{max-width:300px;}
+    .socialmedia h4{font-size: 22px;}
+    footer p{margin-bottom:10px;}
+}
+@media(min-width:481px) and (max-width:600px){
+    .flex-container{
+        flex-direction: column;
+        align-items:center;
+        margin: auto;
+        max-width:480px;
+    }
+    .introducao{width:100%;}
+    .nav-bar{
+        align-items:center;
+        width:50%;
+        flex:2;
+    }
+    .nav-bar h2{font-size: 22px;}
+    .menu-nav-bar li{font-size:14px;}
+    .flex-container-introducao{
+        align-items: center;
+        margin:auto;
+    }
+    .flex-container-introducao h2{font-size: 18px;}
+    .flex-container-introducao p{font-size: 14px;}
+    .itens-contato-introducao{max-width: 220px;}
+    #about-me{
+        display:flex;
+        justify-content: center;
+        height:250px;
+    }
+    .apresentacao-titulo{margin-top:30px;}
+    .apresentacao-titulo h2{align-self:flex-start;}
+    .c-about{
+        display: flex;
+        flex-direction: column;
+        max-width:320px;
+        width:70%;
+        align-items: center;
+    }
+    .flex-container-apresentacao p{margin-bottom:20px;}
+    #portfolio{height:1300px;}
+    #timeline{height:1300px;}
+    .timelines{
+        align-items: center;
+        margin:0;
+    }
+    .img-texto{
+        flex:2;
+        flex-direction:column;
+        justify-content: center;
+    }
+    .timeline-circle{margin-bottom: 20px;}
+    .timelines p{
+        margin-right:40px;
+        margin-bottom:10px;
+        font-size:16px;
+    }
+    .t-data{color:#00acff;}
+    .itimeline h3{
+        margin-bottom: 10px;
+        font-size:20px;
+    }
+    .itimeline h4{
+        margin-bottom: 3px;
+        font-size:18px;
+    }
+    #contact-me{
+        height:1300px;
+        align-items:center;
+    }
+    #contact-me main{
+        height:1080px;
+        max-width: 300px;
+        padding: 15px;
+    }
+    .container-contact p{
+        padding: 10px;
+        font-size: 18px;
+    }
+    .bt-forms{max-width:300px;}
+    .contact h2{
+        font-size: 24px;
+        align-self: center;
+    }
+    .container-contact p{padding: 10px;}
+    .forms{margin-top:80px;}
+    .bt-forms{max-width:300px;}
+    .socialmedia{max-width:230px;}
+    .icontact{
+        justify-content: center;
+        flex-wrap:wrap;
+    }
+    .socialmedia h4{font-size: 20px;
+    }
+    footer p{margin-bottom:10px;}
+}
+@media(min-width:601px) and (max-width:790px){
+    .flex-container{
+        flex-direction: column;
+        align-items:center;
+        margin: auto;
+        max-width:480px;
+    }
+    .introducao{ width:100%;}
+    .nav-bar{
+        align-items:center;
+        width:100%;
+        flex:2;
+    }
+    .nav-bar h2{font-size: 22px;}
+    .menu-nav-bar li{font-size:14px;}
+    .flex-container-introducao{
+        align-items: center;
+        margin:auto;
+    }
+    .flex-container-introducao h2{font-size: 20px;}
+    .flex-container-introducao p{font-size: 14px;}
+    .itens-contato-introducao{max-width: 220px;}
+    .rounded-circle{width:60px;height:60px;}
+    #about-me{
+        display:flex;
+        justify-content: center;
+        height:250px;
+    }
+    .apresentacao-titulo{margin-top:30px;}
+    .apresentacao-titulo h2{align-self:flex-start;}
+    .c-about{
+        display: flex;
+        flex-direction: column;
+        max-width:320px;
+        width:70%;
+        align-items: center;
+    }
+    .flex-container-apresentacao p{margin-bottom:20px;}
+    #portfolio{height:1200px;}
+    #timeline{height:1200px;}
+    .timelines{
+        align-items: center;
+        margin:0;
+    }
+    .img-texto{
+        flex:2;
+        flex-direction:column;
+        justify-content: center;
+    }
+    .timeline-circle{margin-bottom: 20px;}
+    .timelines p{
+        margin-right:40px;
+        margin-bottom:10px;
+        font-size:16px;
+    }
+    .t-data{color:#00acff;}
+    .itimeline h3{
+        margin-bottom: 10px;
+        font-size:20px;
+    }
+    .itimeline h4{
+        margin-bottom: 3px;
+        font-size:18px;
+    }
+    .itimeline p{font-size:14px;}
+    #contact-me{
+        height:1200px;
+        align-items:center;
+    }
+    #contact-me main{
+        height:1000px;
+        max-width: 450px;
+        padding: 15px;
+    }
+    .container-contact p{padding: 10px;}
+    .bt-forms{max-width:450px;}
+    .socialmedia{max-width:300px;}
+    .socialmedia h4{font-size: 22px;}
+    footer p{margin-bottom:10px;}
+}
+@media(min-width:791px) and (max-width:860px){
+    .flex-container{
+        flex-direction: column;
+        align-items:center;
+        margin: auto;
+        max-width:480px;
+    }
+    .introducao{width:100%; }
+    .nav-bar{
+        align-items:center;
+        width:100%;
+        flex:2;
+    }
+    .nav-bar h2{font-size: 24px;}
+    .menu-nav-bar li{font-size:16px;}
+    .flex-container-introducao{
+        align-items: center;
+        margin:auto;
+    }
+    .flex-container-introducao h2{font-size: 24px;}
+    .flex-container-introducao p{font-size: 16px;}
+    .itens-contato-introducao{max-width: 220px;}
+    #about-me{
+        display:flex;
+        justify-content: center;
+        height:250px;
+    }
+    .apresentacao-titulo{margin-top:30px;}
+    .apresentacao-titulo h2{align-self:flex-start;}
+    .c-about{
+        display: flex;
+        flex-direction: column;
+        max-width:320px;
+        width:70%;
+        align-items: center;
+    }
+    .flex-container-apresentacao p{margin-bottom:20px;}
+    #portfolio{height:1200px;}
+    #timeline{height:1200px;}
+    .timelines{
+        align-items: center;
+        margin:0;
+    }
+    .img-texto{
+        flex:2;
+        flex-direction:column;
+        justify-content: center;
+    }
+    .timeline-circle{margin-bottom: 20px;}
+    .timelines p{
+        margin-right:40px;
+        margin-bottom:10px;
+    }
+    .t-data{color:#00acff;}
+    .itimeline h3{margin-bottom: 10px;}
+    .itimeline h4{margin-bottom: 3px;}
+    #contact-me{
+        height:1200px;
+        align-items:center;
+    }
+    #contact-me main{
+        height:1000px;
+        max-width: 500px;
+        padding: 15px;
+    }
+    .container-contact p{padding: 10px;}
+    .bt-forms{max-width:500px;}
+    .socialmedia{max-width:500px;}
+    .socialmedia h4{font-size: 22px;}
+    footer p{margin-bottom:10px;}
+}
+@media(min-width:861px) and (max-width:997px){
+    .flex-container{
+        flex-direction: column;
+        align-items:center;
+        margin: auto;
+        max-width:480px;
+    }
+    .introducao{width:100%; }
+    .nav-bar{
+        align-items:center;
+        width:100%;
+        flex:2;
+    }
+    .nav-bar h2{font-size: 24px;}
+    .menu-nav-bar li{font-size:16px;}
+    .flex-container-introducao{
+        align-items: center;
+        margin:auto;
+    }
+    .flex-container-introducao h2{font-size: 24px;}
+    .flex-container-introducao p{font-size: 16px;}
+    .itens-contato-introducao{max-width: 220px;}
+    #about-me{
+        display:flex;
+        justify-content: center;
+        height:250px;
+    }
+    .apresentacao-titulo{margin-top:30px;}
+    .apresentacao-titulo h2{align-self:flex-start;}
+    .c-about{
+        display: flex;
+        flex-direction: column;
+        max-width:320px;
+        width:70%;
+        align-items: center;
+    }
+    .flex-container-apresentacao p{margin-bottom:20px;}
+    #portfolio{height:1300px;}
+    #timeline{height:1200px;}
+    .timelines{
+        align-items: center;
+        margin:0;
+    }
+    .img-texto{
+        flex:2;
+        flex-direction:column;
+        justify-content: center;
+    }
+    .timeline-circle{margin-bottom: 20px;}
+    .timelines p{
+        margin-right:40px;
+        margin-bottom:10px;
+    }
+    .t-data{color:#00acff;}
+    .itimeline h3{margin-bottom: 10px;}
+    .itimeline h4{margin-bottom: 3px;}
+    #contact-me{
+        height:1300px;
+        align-items:center;
+    }
+    #contact-me main{
+        height:1000px;
+        max-width: 500px;
+        padding: 15px;
+    }
+    .container-contact p{padding: 10px;}
+    .bt-forms{max-width:500px;}
+    .socialmedia{max-width:500px;}
+    .socialmedia h4{font-size: 22px;}
+    footer p{margin-bottom:10px;}
+}
+@media(min-height:50px) and (max-height:280px){
+    .flex-container{
+        flex-direction: column;
+        align-items:center;
+        margin: auto;
+    }
+    .introducao{width:100%;height:300px;}
+    .nav-bar{
+        align-items:center;
+        flex-direction:row;
+        width:50%;
+        flex:2;
+    }
+    .nav-bar h2{font-size: 16px;}
+    .menu-nav-bar li{font-size:12px;}
+    .flex-container-introducao{
+        align-items: center;
+        margin:auto;
+    }
+    .flex-container-introducao .rounded-circle{width:35px;height:35px;margin-top:10px;}
+    .flex-container-introducao h2{font-size: 14px;}
+    .flex-container-introducao p{font-size: 12px;}
+    .itens-contato-introducao{max-width: 220px;}
+    #about-me{
+        display:flex;
+        justify-content: center;
+        height:250px;
+    }
+    .apresentacao-titulo{margin-top:30px;}
+    .apresentacao-titulo h2{align-self:flex-start;}
+    .c-about{
+        display: flex;
+        flex-direction: column;
+        max-width:320px;
+        width:70%;
+        align-items: center;
+    }
+    .flex-container-apresentacao p{margin-bottom:20px;}
+    .timelines{align-items:center;}
+    .img-texto{
+        flex:2;
+        flex-direction:column;
+    }
+    .timeline-circle{margin-bottom: 20px;}
+    .timelines p{margin-bottom:10px;}
+    .t-data{color:#00acff;}
+    .itimeline h3{margin-bottom: 10px;}
+    .itimeline h4{margin-bottom: 3px;}
+    #contact-me{
+        height:920vh;
+        align-items:center;
+    }
+    #contact-me main{
+        height:900vh;
+        max-width: 250px;
+        padding: 15px;
+    }
+    .contact h2{
+        font-size: 24px;
+        align-self: center;
+    }
+    .container-contact p{
+        padding: 10px;
+        font-size: 16px;
+    }
+    .forms{margin-top:80px;}
+    .bt-forms{max-width:200px;}
+    .socialmedia{max-width:250px;}
+    .icontact{
+        flex-wrap:wrap;
+        justify-content: center;
+    }
+    .socialmedia h4{font-size: 20px;}
+    footer p{margin-bottom:10px;}
 }
