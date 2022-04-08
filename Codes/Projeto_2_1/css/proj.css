@@ -2,24 +2,18 @@ header{
     color:whitesmoke;
     background-color: rgba(0, 0, 0, 0.87);
 }
-
-.nav-bar a{
-    color:whitesmoke;
-}
-
+.nav-bar a{color:whitesmoke;}
 #IMTRP-apresentacao{
     background-color: white;
     color: rgba(0, 0, 0, 0.87);
     margin-bottom:100px;
 }
-
 .IMTRP-titulo{
     display:flex;
     justify-content: center;
     align-items:center;
     height: 150px;
 }
-
 .IMTRP-proj{
     justify-content: space-between;
     flex-direction: column;
@@ -30,60 +24,36 @@ header{
     padding: 20px;
     max-width: 1100px;
 }
-
-.ft-fonte{
-    font-size: 12px;
-}
-
+.ft-fonte{font-size: 12px;}
 .IMTRP-ft-fonte{
     text-align:center;
     margin-bottom: 80px;
 }
-
 .source-code{
     background-color:aliceblue;
     padding: 30px;
     border-radius: 5px;
 }
-
-.references{
-    background-color: white;
-}
-
-.ADP-title{
-    text-align:center;
-}
-
+.references{background-color: white;}
+.ADP-title{text-align:center;}
 @media(max-width:700px){
-    p{
-        width: 80%;
-    }
-
-    img{
+    p{width: 80%;}
+    .IMTRP-proj img{
         width:95%;
         height:95%;
     }
-
     .IMTRP-proj{
         margin: 0;
         padding:0;
     }
-
-    .IMTRP-titulo{
-        text-align: center;
-    }
-
-    .ft-fonte{
-        margin-left: 30px;
-    }
-
+    .IMTRP-titulo{text-align: center;}
+    .ft-fonte{margin-left: 30px;}
     .source-code{
         display:flex;
         flex-direction: column;
         max-width:400px;
         font-size:12px;
     }
-
     .ftexto p{
         text-align: center;
     }
