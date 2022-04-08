@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  href="../css/proj.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <title>Prototipo de Robô de Transporte de Materiais Industriais - Currículo de Harrison</title>
+</head>
+<body>
+    <div class="language-header">
+        <div class="flex-container lh"><!--Language Header-->
+            <div class="lh-lh">
+                <a href="#"><img src="../img/brasil.png" width="17px" height="13px"></a>
+                <a href="../IMTRP.html"><img src="../img/eua.png" width="17px" height="13px"></a>
+            </div>
+        </div>
+    </div>
+    <header>
+        <main class="flex-container nav-bar">
+            <a href="./index-pt.html"><h2>Harrison Caetano Cândido</h2></a>
+            <ul class="menu-nav-bar">
+                <li><a href="./index-pt.html#about-me">Sobre mim</a></li>
+                <li><a href="./index-pt.html#portfolio_">Portfolio</a></li>
+                <li><a href="./index-pt.html#contact-me">Contato</a></li>
+            </ul>
+        </main>
+    </header>
+        <section id="IMTRP-apresentacao">
+            <div class="IMTRP-titulo">
+                <h2>Prototipo de Robô de Transporte de Materiais Industriais</h2>
+                </div>
+                    <div class="flex-container IMTRP-proj">
+                        <div class="IMTRP-ft-fonte"><img src="../img/Robo_arduino.png" widht="500px" height="300px">
+                            <p class="ft-fonte">Fonte: Autoria própria</p>
+                        </div>                
+                        <p>O projeto teve como objetivo desenvolver um carrinho autônomo anticolisão e antiqueda por meio do uso de 
+                            sensores controlados via arduino. Os sensores foram posicionados de forma a evitar
+                            que o robô entre em contato com obstáculos na direção do movimento, como paredes, e também de
+                            caindo de uma certa altitude, para uso logístico em indústrias, fazendo uma prototipagem de 
+                            modelos modernos de veículos que não precisam de motorista.
+                        </p>
+                    </div>
+                    <div class="IMTRP-titulo">
+                        <h2>Introdução</h2>
+                        </div>
+                        <div class="flex-container IMTRP-proj">
+                            <p>
+                                Com a estabilização da Indústria 4.0 nos parques brasileiros
+                                e industriais internacionais, principalmente no
+                                setor secundário da economia, a otimização tornou-se necessária
+                                a todos os pilares industriais, que inclui o setor
+                                serviços logísticos terciários.
+                                A globalização torna o mercado e a indústria
+                                estão sempre procurando atender o cliente o mais rápido possível,
+                                rápida e eficientemente possível, mas para isso é necessário que
+                                o que está por trás da implementação desses serviços
+                                está fornecendo segurança e eficiência no que diz respeito
+                                funcionários, ou seja, o uso de equipamentos
+                                definitivo e cada vez melhor.<br><br>
+                                Sendo assim, o objetivo deste trabalho foi
+                                projetar e construir um carro que se move suavemente
+                                independente, e que consegue evitar obstáculos e que
+                                impedi-lo de cair em um buraco, fazendo um
+                                simulação simples de veículos independentes para uso
+                                industriais e elétricos de baixo custo.
+                                Além disso, a paródia de um veículo ainda não foi
+                                projetado alcança mesmo com suas limitações físicas e
+                                tecnologias, simular um carro autônomo industrial,
+                                atingir seus objetivos básicos de detectar, parar e
+                                evitar objeções imprevistas.
+                            </p>
+                        </div>
+                        <div class="IMTRP-titulo">
+                            <h2>Desenvolvimento</h2>
+                            </div>
+                            <div class="flex-container IMTRP-proj">
+                                <p>
+                                    Durante o desenvolvimento do projeto,
+                                    experimentos de software e hardware foram feitos no protótipo
+                                    para uma melhor compreensão dos componentes utilizados, como o
+                                    sensor ultrasônico.
+                                    Nesse sentido, todo o hardware do carrinho foi
+                                    primeira fase concluída, com um pico de dificuldade
+                                    apenas em dúvida sobre a tomada de decisão do cargo
+                                    dos sensores no chassi, o que favoreceria melhor a detecção
+                                    de obstáculos ao redor do veículo, tendo concentrado
+                                    nossos esforços na interseção da programação da ponte H
+                                    L298N, o servo motor de 180° e os sensores ultrassônicos
+                                    HC-SR04, pela plataforma Arduino.<br><br>
+                                    O desafio mais pertinente foi sincronizar
+                                    entre a distância calculada pelo sensor, de modo que o
+                                    espécime poderia desviar de obstáculos e a velocidade
+                                    com o qual ele pararia os motores A e B, e faria o
+                                    rotação anti-horária do mesmo com o micro-servo motor,
+                                    sem ter um impacto muito forte com o
+                                    barreiras.<br><br>
+                                    Outro problema foi ter que lidar com o peso do
+                                    componentes, que poderia afetar o movimento do prototipo para o desvio
+                                    de objetos indesejados. Uma questão analisada foi a da questão de 
+                                    problema de pilha, pois haviam muitos componentes conectados
+                                    em uma única bateria, que é de 9V, consumindo muita
+                                    eletricidade e limitando o uso do projeto em
+                                    em relação ao seu tempo ativo, sendo uma alternativa para
+                                    uso de um powerbank, o que aumentaria o tempo ativo
+                                    do carrinho, mas reduziria sua velocidade e potência.
+                                    Além disso, também era difícil lidar com a
+                                    questão de tempo, velocidade e altura, que criava perigo
+                                    de impacto.
+                                </p>
+                            </div>
+                            <div class="IMTRP-titulo">
+                                <h2>Resultados e Discussões</h2>
+                                </div>
+                                <div class="flex-container IMTRP-proj">
+                                    <p>
+                                        No final de setembro de 2019 conseguimos concluir
+                                        o protótipo com quase 100% de eficiência graças ao
+                                        sensor horizontal, mesmo com baixo desempenho
+                                        no sensor vertical, devido à falta de sincronização dos sensores ultrassônicos.
+                                        Ainda assim, o robô pode simular um transportador de material industrial autônomo programável,
+                                        que poderia ser utilizado em indústrias para facilidades logísticas, auxiliando no transporte de metais pesados,
+                                        pessoas e prevenir acidentes que custariam a vida dos funcionários na área de trabalho.
+                                    </p>
+                                </div>
+                                <div class="IMTRP-titulo">
+                                    <h2>Conclusion</h2>
+                                    </div>
+                                    <div class="flex-container IMTRP-proj">
+                                        <p>
+                                            Apesar das dificuldades encontradas, principalmente aquelas relacionadas
+                                            ao funcionamento simultâneo dos componentes, em particular da Ponte H com os sensores ultrassônicos,
+                                            o projeto atingiu os objetivos teóricos pré-estabelecidos, que eram driblar objetos à sua frente
+                                            e trabalhar de acordo com a programação do operador.
+                                        </p>
+                                    </div>
+                                    <div class="IMTRP-titulo">
+                                        <h2>Source Code</h2>
+                                        </div>
+                                        <div class="flex-container IMTRP-proj">
+                                            <p class="source-code"> 
+                                                OBS: Esta é a versão mais atualizada que encontrei no pendrive, em breve providencio a versão final
+                                                utilizada na apresentação do projeto<br><br>
+                                                #include <Ultrasonic.h><br>
+                                                #include <Servo.h><br>
+                                                #define pino_trigger 9 //Top sensor<br>
+                                                #define pino_echo 8<br>
+                                                #define leed 7<br><br>
+                                                #define pino_triggger 12 //Bottom sensor<br>
+                                                #define pino_eccho 11<br>
+                                                #define led 13<br><br>
+                                                //Arduino's pins connected to H bridge input<br>
+                                                int val; <br>
+                                                int ChaveEsquerda;<br>
+                                                int ChaveCentral;<br>
+                                                int ChaveDireita; <br>
+                                                int IN1 = 1;<br>
+                                                int IN2 = 2;<br>
+                                                int IN3 = 3;<br>
+                                                int IN4 = 4;<br>
+                                                Servo myservo;<br>
+                                                //Initialize the sensor on the defined pins above<br>
+                                                Ultrasonic ultrasonic(pino_trigger, pino_echo);<br>
+                                                Ultrasonic ultrasonic2(pino_triggger, pino_eccho);<br><br>
+                                                void setup()<br>
+                                                {<br><br>
+                                                Serial.begin(115200);<br><br> 
+                                                Serial.println("Lendo dados do sensor...");<br>
+                                                //Define the pins as output<br>
+                                                pinMode(IN1, OUTPUT);<br>
+                                                pinMode(IN2, OUTPUT);<br>
+                                                pinMode(IN3, OUTPUT);<br>
+                                                pinMode(IN4, OUTPUT);<br>
+                                                pinMode(led, OUTPUT);<br>
+                                                pinMode(leed, OUTPUT);<br>
+                                                myservo.attach(10); <br>
+                                                    pinMode(ChaveEsquerda, INPUT);        //Activate the intern pull-up resistor<br>  
+                                                    digitalWrite(ChaveEsquerda, HIGH);  <br>  
+                                                    pinMode(ChaveCentral, INPUT); <br>
+                                                    digitalWrite(ChaveCentral, HIGH); <br>
+                                                    pinMode(ChaveDireita, INPUT);  <br>
+                                                    digitalWrite(ChaveDireita, HIGH);<br>
+                                                }<br><br>
+                                                void loop()<br>
+                                                {<br>
+                                                //Scan the sensor's informations in cm and pol<br><br>
+                                                float cmMsec1,cmMsec2,inMsec1, inMsec2;<br><br>
+                                                long microsec1 = ultrasonic.timing();<br>
+                                                cmMsec1 = ultrasonic.convert(microsec1, Ultrasonic::CM);<br>
+                                                inMsec1 = ultrasonic.convert(microsec1, Ultrasonic::IN);<br>
+                                                //DELAY<br>
+                                                long microsec2 = ultrasonic2.timing();<br>
+                                                cmMsec2 = ultrasonic.convert(microsec2, Ultrasonic::CM);<br>
+                                                inMsec2 = ultrasonic.convert(microsec2, Ultrasonic::IN);<br>
+                                                //DELAY<br>
+                                                //Shows the informations on serial monitor<br>
+                                                Serial.print("Distancia em cm sensor largura (1): ");<br>
+                                                Serial.print(cmMsec1);<br>
+                                                Serial.print(" - Distancia em polegadas sensor largura (1): ");<br>
+                                                Serial.println(inMsec1);<br>
+                                                delay(100);<br>
+                                                Serial.print("Distancia em cm sensor altura (2): ");<br>
+                                                Serial.print(cmMsec2);<br>
+                                                Serial.print(" - Distancia em polegadas sensor de altura (2): ");<br>
+                                                Serial.println(inMsec2);<br>
+                                                delay(100);<br><br>
+                                                if((cmMsec1) >= 20){<br>
+                                                //Spin the two Engines to the clockwise<br>
+                                                digitalWrite(IN1, HIGH);<br>
+                                                digitalWrite(IN2, LOW);<br>
+                                                //motor b<br>
+                                                digitalWrite(IN3, LOW);<br>
+                                                digitalWrite(IN4, HIGH);<br>
+                                                digitalWrite(leed, LOW);<br><br>
+                                                }<br>
+                                                if((cmMsec1) < 20){ //Scan the distance variable<br>
+                                                //Para os Motores A e B<br>
+                                                digitalWrite(IN1, HIGH);<br>
+                                                digitalWrite(IN2, HIGH);<br>
+                                                digitalWrite(IN3, HIGH);<br>
+                                                digitalWrite(IN4, HIGH);<br>
+                                                digitalWrite(leed, HIGH);<br>
+                                                delay(500);<br><br>
+                                                myservo.write(45);<br>
+                                                delay(500); <br>
+                                                myservo.write(-100);<br>
+                                                delay(500);<br>
+                                                myservo.write(115);<br>
+                                                delay(500);<br>
+                                                myservo.write(45);<br>
+                                                delay(500);<br><br>
+                                                digitalWrite(IN1, LOW); // Reverse movement<br>
+                                                digitalWrite(IN2, HIGH);<br>
+                                                //motor b<br>
+                                                digitalWrite(IN3, HIGH);<br>
+                                                digitalWrite(IN4, LOW);<br>
+                                                delay(500);<br><br>
+                                                digitalWrite(IN1, HIGH);  //Turn left<br>
+                                                digitalWrite(IN2, LOW);<br>
+                                                digitalWrite(IN3, HIGH);<br>
+                                                digitalWrite(IN4, HIGH);<br>
+                                                delay(100);<br>
+                                                digitalWrite(leed, HIGH);<br><br>
+                                                }<br>
+                                                if((cmMsec2) >= 5){ //prints the distance variable<br>
+                                                //Para os Motores A e B<br>
+                                                digitalWrite(IN1, HIGH);<br>
+                                                digitalWrite(IN2, HIGH);<br>
+                                                digitalWrite(IN3, HIGH);<br>
+                                                digitalWrite(IN4, HIGH);<br>
+                                                digitalWrite(led, HIGH);<br>
+                                                delay(500);<br><br>
+                                                digitalWrite(IN1, LOW); // Reverse movement<br>
+                                                digitalWrite(IN2, HIGH);<br>
+                                                //motor b<br>
+                                                digitalWrite(IN3, HIGH);<br>
+                                                digitalWrite(IN4, LOW);<br>
+                                                delay(500);<br><br>
+                                                digitalWrite(IN1, HIGH);<br>
+                                                digitalWrite(IN2, HIGH);<br>
+                                                digitalWrite(IN3, HIGH);<br>
+                                                digitalWrite(IN4, HIGH);<br>
+                                                delay(100);<br><br>
+                                                digitalWrite(IN1, HIGH);  //Turn left<br>
+                                                digitalWrite(IN2, LOW);<br>
+                                                digitalWrite(IN3, HIGH);<br>
+                                                digitalWrite(IN4, HIGH);<br>
+                                                delay(100);<br>
+                                                }<br>
+                                                if((cmMsec2) < 5){<br>
+                                                digitalWrite(IN1, HIGH);<br>
+                                                digitalWrite(IN2, LOW);<br>
+                                                //motor b<br>
+                                                digitalWrite(IN3, LOW);<br>
+                                                digitalWrite(IN4, HIGH);<br>
+                                                digitalWrite(led, LOW);<br>
+                                                digitalWrite(leed, LOW);<br>
+                                                }
+                                                }
+                                            </p>
+                                        </div>
+                                        <div class="IMTRP-titulo">
+                                            <h2>Referências</h2>
+                                            </div>
+                                            <div class="flex-container IMTRP-proj">
+                                                <p class="source-code references">
+                                                    "Robô Autônomo Básico" Portal Arduino.2019-2019.<br>
+                                                    Consultado em 23/09/2019. Disponível na internet em:<br><
+                                                    <a href="http://portaldoarduino.com.br/robo-autonomo-basico-com-sens
+                                                    or-ultrassonico-hc-sr04/" target="blank_">http://portaldoarduino.com.br/robo-autonomo-basico-com-sens
+                                                    or-ultrassonico-hc-sr04/</a> ><br>
+                                                    "Universo Robôs" em Marlon Nardi, Youtube..2017-2019.<br>
+                                                    Consultado em 23/09/2019. Disponível na internet em:<br><
+                                                    <a href="https://www.youtube.com/watch?v=saHiPjBxIR8" target="blank_">https://www.youtube.com/watch?v=saHiPjBxIR8</a> ><br>
+                                                    "Robô Autônomo SR2" em Seu Robô, 2019-2019.<br>Consultado
+                                                    em 23/09/2019. Disponível na internet em:<br><
+                                                    <a href="https://seurobo.com.br/robo-autonomo-sr-2-o-robo-autonomomais-eficiente-com-arduino-uno-e-ponte-h-l298n/" target="blank_">
+                                                        https://seurobo.com.br/robo-autonomo-sr-2-o-robo-autonomomais-eficiente-com-arduino-uno-e-ponte-h-l298n/
+                                                    </a> >
+
+                                                </p>
+                                            </div>   
+                                    </section>
+    <section id="sitemap">
+        <div class="flex-container clsitemap">
+            <div class="c-sitemap">
+                <p>Navegação</p>
+                <ul class="ct-sitemap">
+                    <li><a href="./index-pt.html#about-me">Sobre mim</a></li>
+                    <li><a href="./index-pt.html#portfolio_">Portfolio</a></li>
+                    <li><a href="./index-pt.html#contact-me">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="flex-container ftexto">
+            <p>&copy; 2022 Harrison Caetano Cândido</p>
+            <a href="https://github.com/HarrisonCaetanoCandido/Desenv-Web/tree/main/Codes/Projeto_2_1" target="blank_">Website Source Code</a>
+        </div>
+    </footer>
+    </body>
+</html>
