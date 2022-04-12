@@ -1017,3 +1017,4 @@ footer{
     .socialmedia h4{font-size: 22px;}
     footer p{margin-bottom:10px;}
 }
+@media(max-width:700px){img .rounded-circle{width:50%;height:50%;}}
