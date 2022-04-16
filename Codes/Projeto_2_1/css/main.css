@@ -530,18 +530,18 @@ footer{
 }
 @media(min-width:601px) and (max-width:790px){
     .flex-container{max-width:790px;}
-    .language-header{height:50px;}
-    .lh img{width:30px;height:20px;}
+    .language-header{height:30px;}
+    .lh img{width:28px;height:18px;}
     .nav-bar{width:100%;}
-    .nav-bar h2{font-size: 24px;}
+    .nav-bar h2{font-size: 24px;margin-top:20px;}
     .menu-nav-bar li{font-size:15px;margin-right:20px;}
-    .flex-container-introducao h2{font-size: 32px;}
-    .flex-container-introducao p{font-size: 20px;}
+    .flex-container-introducao h2{font-size: 28px;}
+    .flex-container-introducao p{font-size: 18px;}
     .itens-contato-introducao{max-width: 220px;}
-    .rounded-circle{max-width:135px;max-height:130px;}
+    .rounded-circle{width: 90px;height: 90px;margin-top:20px;}
     #about-me{height:350px;}
-    .apresentacao-titulo h2{font-size:30px;}
-    .flex-container-apresentacao p{margin-bottom:20px;font-size: 22px;}
+    .apresentacao-titulo h2{font-size:28px;}
+    .flex-container-apresentacao p{margin-bottom:20px;font-size: 20px;}
     #portfolio{height:1500px;}
     .titulo-top-proj{font-size:20px;}
     .itop-projects{max-width:300px;max-height:400px;}
@@ -571,6 +571,7 @@ footer{
     .nav-bar{width:100%;}
     .nav-bar h2{font-size: 24px;}
     .menu-nav-bar li{font-size:16px;}
+    .rounded-circle{width: 120px;height: 120px;}
     .flex-container-introducao h2{font-size: 32px;}
     .flex-container-introducao p{font-size: 22px;}
     .itens-contato-introducao{max-width: 220px;}
