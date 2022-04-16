@@ -76,3 +76,30 @@ if,else - Igual em c
 if ternário - Podemos também fazer uma verificação em uma única linha usando o "if" ternário:
 
 Ex:  [condição]?[instrução1]:[instrução2];
+
+### for
+Executa uma instrucao segundo uma condicao ate que ela seja falsa
+
+### for/in
+Executa repetição a partir de uma propriedade
+
+### for/of
+Executa repeticao a partir de um valor
+
+# Funcoes
+Blocos de comandos e instruções para a execução de determinadas tarefas
+
+Ex:
+
+function nomeDaFuncao(){
+    ${instrucao};
+}
+
+nomeDaFuncao();
+
+## Métodos aritméticos de Js
+
+Number() - converter valores em números
+Prompt() - registrar entradas de usuário
+Alert() - mostrar mensagem ao usuário
+Template Strings - usar strings junto com expressões numericas
