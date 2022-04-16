@@ -32,3 +32,47 @@ Quando a variável é declarada dentro de um bloco, sua visibilidade pode ficar 
 '&&' - and
 '||' - or
 '!'  - not
+
+# Arrays
+
+let array=['string',1,true] ... let array =['string',1,true,false,['array1'],['array2']...]
+
+## Manipulação de arrays
+
+forEach() - itera um array;
+push() - add item no final do array;
+pop() - remove item no final do array;
+shift() - remove item no início do array;
+unshift() - add item no início do array;
+indexOf() - retorna o índice de um valor;
+splice() - remove ou substitui um item pelo índice;
+slice() - retorna uma parte de um array existente;
+
+# Objetos
+
+Dados que possuem propriedades e valores que definem suas características. Deve ser declarado entre chaves "{}".
+
+Ex: Imagine uma xícara azul. Ela tem cor, pode ter vários tamanhos e funções. Pode ser declarada assim:
+
+var xiacara={
+    cor:'azul',
+    tamanho:'p',
+    funcao:tomarCafe()
+}
+
+var cor = xicara.cor;
+var tamanho = xicara.tamanho;
+var funcao = tomarCafe();
+
+# Estruturas condicionais
+
+Instruções para realizar determinadas tarefas a partir de uma condição, seja de decisão ou repetição
+
+Ex: Um jogo precisa mudar o placar toda vez que um jogador marca
+pontuação.
+
+if,else - Igual em c
+
+if ternário - Podemos também fazer uma verificação em uma única linha usando o "if" ternário:
+
+Ex:  [condição]?[instrução1]:[instrução2];
