@@ -380,45 +380,18 @@ footer{
 .ftexto p{font-size:15px;}
 .ftexto a{color:#00acff;}
 @media(min-width:50px) and (max-width:199px){
-    .flex-container{
-        flex-direction: column;
-        align-items:center;
-        margin: auto;
-        max-width:199px;
-    }
-    .lh{align-items: flex-end;}
-    .introducao{width:100%;}
-    .nav-bar{
-        align-items:center;
-        width:100%;
-        flex:2;
-    }
+    .flex-container{max-width:199px;}
+    .nav-bar{width:100%;}
     .nav-bar h2{font-size: 16px;}
     .menu-nav-bar{flex-wrap: wrap;}
     .menu-nav-bar li{font-size:12px;margin-top:5px;margin-bottom:10px;}
-    .flex-container-introducao{
-        align-items: center;
-        margin:auto;
-        text-align: center;
-    }
+    .flex-container-introducao{text-align: center;}
     .rounded-circle{width:50px;height:50px;}
     .flex-container-introducao h2{font-size: 14px;}
     .flex-container-introducao p{font-size: 12px;margin-bottom:15px;}
     .itens-contato-introducao{max-width: 199px;flex-wrap:wrap;}
-    #about-me{
-        display:flex;
-        justify-content: center;
-        height:500px;
-    }
-    .apresentacao-titulo{margin-top:30px;}
-    .apresentacao-titulo h2{align-self:flex-start;font-size:18px;text-align: center;}
-    .c-about{
-        display: flex;
-        flex-direction: column;
-        max-width:199px;
-        width:70%;
-        align-items: center;
-    }
+    #about-me{height:500px;}
+    .apresentacao-titulo h2{font-size:18px;text-align: center;}
     .flex-container-apresentacao p{margin-bottom:20px;font-size:12px;text-align: center;}
     #portfolio{height:1500px;}
     .titulo-top-proj h2{font-size:15px;text-align:center;}
@@ -427,39 +400,15 @@ footer{
     .itop-projects p{text-align:center;font-size:10px;}
     .itop-projects h4{font-size:11px;text-align: center;}
     #timeline{text-align:center;height:1400px;}
-    .timelines{
-        align-items: center;
-        margin:0;
-        padding:0;
-    }
+    .timelines{padding:0;}
     .titulo-timeline{font-size:10px;}
-    .img-texto{
-        flex:2;
-        flex-direction:column;
-        justify-content: center;
-        margin:0;
-        padding:0;
-    }
-    .timeline-circle{margin-bottom: 20px;}
-    .timelines p{
-        margin-right:12px;
-        margin-bottom:10px;
-        font-size:10px;
-        
-    }
-    .t-data{color:#00acff;}
-    .itimeline h3{margin-bottom: 10px;font-size:12px;margin-right:12px;}
-    .itimeline h4{margin-bottom: 3px;font-size:10px;margin-right:12px;}
-    #contact-me{
-        height:1400px;
-        align-items:center;
-    }
+    .img-texto{justify-content: center;margin:0;padding:0;}
+    .timelines p{margin-right:12px;font-size:10px;}
+    .itimeline h3{font-size:12px;margin-right:12px;}
+    .itimeline h4{font-size:10px;margin-right:12px;}
+    #contact-me{height:1400px;}
     .contact h2{font-size: 16px;}
-    #contact-me main{
-        height:1160px;
-        max-width: 199px;
-        padding: 5px;
-    }
+    #contact-me main{height:1160px;max-width: 199px;padding: 5px;}
     .forms{margin-top: 150px;}
     .text-forms{margin-right:18px;}
     .container-contact p{padding: 10px;font-size:10px;text-align:center;}
@@ -469,552 +418,284 @@ footer{
     .socialmedia h4{font-size: 16px;margin-left:20px;}
     #sitemap{max-width:199px;height:230px;justify-items: center;}
     .c-sitemap{margin-right:40px;}
-    footer p{margin-bottom:10px;}
 }
 @media(min-width:200px) and (max-width:309px){
-    .flex-container{
-        flex-direction: column;
-        align-items:center;
-        margin: auto;
-        max-width:309px;
-    }
-    .lh{align-items: flex-end;}
-    .introducao{width:100%;}
-    .nav-bar{
-        align-items:center;
-        width:50%;
-        flex:2;
-    }
+    .flex-container{max-width:309px;}
     .nav-bar h2{font-size: 16px;}
     .menu-nav-bar li{font-size:12px;}
-    .flex-container-introducao{
-        align-items: center;
-        margin:auto;
-    }
+    .rounded-circle{width:80px;height:78px;}
     .flex-container-introducao h2{font-size: 18px;}
     .flex-container-introducao p{font-size: 14px;}
     .itens-contato-introducao{max-width: 220px;}
-    #about-me{
-        display:flex;
-        justify-content: center;
-        height:350px;
-    }
-    .apresentacao-titulo{margin-top:30px;}
-    .apresentacao-titulo h2{align-self:flex-start;}
-    .c-about{
-        display: flex;
-        flex-direction: column;
-        max-width:320px;
-        width:70%;
-        align-items: center;
-    }
+    #about-me{height:350px;}
     .flex-container-apresentacao p{margin-bottom:20px;}
     #portfolio{height:1300px;}
-    #timeline{height:1600px;}
+    #timeline{height:1400px;}
     .timelines{align-items: flex-start;}
-    .img-texto{
-        flex:2;
-        flex-direction:column;
-    }
-    .timeline-circle{margin-bottom: 20px;}
-    .timelines p{
-        margin-right: 53px;
-        margin-bottom:10px;
-    }
-    .t-data{color:#00acff;}
-    .itimeline h3{margin-bottom: 10px;}
-    .itimeline h4{margin-bottom: 3px;}
-    #contact-me{
-        height:1300px;
-        align-items:center;
-    }
-    #contact-me main{
-        height:1100px;
-        max-width: 210px;
-        padding: 15px;
-    }
-    .contact h2{
-        font-size: 24px;
-        align-self: center;
-    }
-    .container-contact p{
-        padding: 10px;
-        font-size: 16px;
-    }
+    .timelines p{margin-right: 53px;}
+    #contact-me{height:1300px;}
+    #contact-me main{height:1100px;max-width: 210px;padding: 15px;}
+    .contact h2{font-size: 24px;align-self: center;}
+    .container-contact p{padding: 10px;font-size: 16px;}
     .forms{margin-top:80px;}
     .bt-forms{max-width:200px;}
     .socialmedia{max-width:250px;}
-    .icontact{
-        flex-wrap:wrap;
-        justify-content: center;
-    }
+    .icontact{flex-wrap:wrap;justify-content: center;}
     .socialmedia h4{font-size: 20px;}
-    footer p{margin-bottom:10px;}
 }
 @media(min-width:310px) and (max-width:369px){
-    .flex-container{
-        flex-direction: column;
-        align-items:center;
-        margin: auto;
-    }
-    .introducao{width:100%;}
-    .nav-bar{
-        align-items:center;
-        width:50%;
-        flex:2;
-    }
+    .flex-container{max-width: 369px;}
+    .language-header{height:40px;}
+    .lh img{width:28px;height:18px;}
     .nav-bar h2{font-size: 16px;}
     .menu-nav-bar li{font-size:12px;}
-    .lh{align-items: flex-end;}
-    .flex-container-introducao{
-        align-items: center;
-        margin:auto;
-    }
     .flex-container-introducao h2{font-size: 18px;}
     .flex-container-introducao p{font-size: 14px;}
     .itens-contato-introducao{max-width: 220px;}
-    #about-me{
-        display:flex;
-        justify-content: center;
-        height:250px;
-    }
-    .apresentacao-titulo{margin-top:30px;}
-    .apresentacao-titulo h2{align-self:flex-start;}
-    .c-about{
-        display: flex;
-        flex-direction: column;
-        max-width:320px;
-        width:70%;
-        align-items: center;
-    }
+    #about-me{height:250px;}
     .flex-container-apresentacao p{margin-bottom:20px;}
     #portfolio{height:1300px;}
     #timeline{height:1300px;}
-    .timelines{
-        align-items: center;
-        margin:0;
-    }
-    .img-texto{
-        flex:2;
-        flex-direction:column;
-        justify-content: center;
-    }
+    .img-texto{justify-content: center;}
     .timeline-circle{margin-bottom: 20px;}
-    .timelines p{
-        margin-right:40px;
-        margin-bottom:10px;
-    }
-    .t-data{color:#00acff;}
-    .itimeline h3{margin-bottom: 10px;}
-    .itimeline h4{margin-bottom: 3px;}
-    #contact-me{
-        height:1200px;
-        align-items:center;
-    }
-    #contact-me main{
-        height:1000px;
-        max-width: 290px;
-        padding: 15px;
-    }
+    #contact-me{height:1200px;}
+    #contact-me main{height:1000px;max-width: 280px;padding: 15px;}
     .container-contact p{padding: 10px;}
-    .bt-forms{max-width:300px;}
+    .bt-forms{max-width:280px;}
     .socialmedia{max-width:300px;}
     .socialmedia h4{font-size: 22px;}
-    footer p{margin-bottom:10px;}
 }
 @media(min-width:370px) and (max-width:480px){
-
-    .flex-container{
-        flex-direction: column;
-        align-items:center;
-        margin: auto;
-        max-width:480px;
-    }
-    .lh{align-items: flex-end;}
-    .introducao{width:100%;}
-    .nav-bar{
-        align-items:center;
-        width:50%;
-        flex:2;
-    }
-    .nav-bar h2{font-size: 16px;}
-    .menu-nav-bar li{font-size:12px;}
-    .flex-container-introducao{
-        align-items: center;
-        margin:auto;
-    }
-    .flex-container-introducao h2{font-size: 18px;}
-    .flex-container-introducao p{font-size: 14px;}
+    .flex-container{max-width:480px;}
+    .language-header{height:30px;}
+    .lh img{width:28px;height:18px;}
+    .nav-bar{width:50%;}
+    .nav-bar h2{font-size: 22px;}
+    .menu-nav-bar li{font-size:16px;}
+    .rounded-circle{width:95px;height:90px;}
+    .flex-container-introducao h2{font-size: 24px;}
+    .flex-container-introducao p{font-size: 20px;}
     .itens-contato-introducao{max-width: 220px;}
-    #about-me{
-        display:flex;
-        justify-content: center;
-        height:250px;
-    }
-    .apresentacao-titulo{margin-top:30px;}
-    .apresentacao-titulo h2{align-self:flex-start;}
-    .c-about{
-        display: flex;
-        flex-direction: column;
-        max-width:320px;
-        width:70%;
-        align-items: center;
-    }
-    .flex-container-apresentacao p{margin-bottom:20px;}
-    #portfolio{height:1200px;}
-    #timeline{height:1200px;}
-    .timelines{
-        align-items: center;
-        margin:0;
-    }
-    .img-texto{
-        flex:2;
-        flex-direction:column;
-        justify-content: center;
-    }
-    .timeline-circle{margin-bottom: 20px;}
-    .timelines p{
-        margin-right:40px;
-        margin-bottom:10px;
-    }
-    .t-data{color:#00acff;}
-    .itimeline h3{margin-bottom: 10px;}
-    .itimeline h4{margin-bottom: 3px;}
-    #contact-me{
-        height:1200px;
-        align-items:center;
-    }
-    #contact-me main{
-        height:1000px;
-        max-width: 290px;
-        padding: 15px;
-    }
-    form{overflow-x: hidden;}
+    #about-me{height:250px;}
+    .apresentacao-titulo h2{font-size:24px;}
+    .flex-container-apresentacao p{margin-bottom:20px;font-size:17px;}
+    #portfolio{height:1300px;}
+    .titulo-top-proj{font-size: 20px;}
+    .itop-projects h4{font-size:20px;}
+    .itop-projects p{font-size:17px;}
+    #timeline{height:1300px;}
+    .img-texto{justify-content: center;}
+    .titulo-timeline{font-size:20px;}
+    .timelines .t-data{font-size:20px;}
+    .itimeline h3{font-size:20px;}
+    .itimeline h4{font-size:18px;}
+    .itimeline p{font-size:14px;}
+    #contact-me{height:1200px;}
+    .titulo-contact{font-size:20px;}
+    #contact-me main{height:1000px;max-width: 290px;padding: 15px;}
     .container-contact p{padding: 10px;}
     .bt-forms{max-width:300px;}
-    .socialmedia{max-width:300px;}
+    .socialmedia{max-width:290px;}
     .socialmedia h4{font-size: 22px;}
-    footer p{margin-bottom:10px;}
 }
 @media(min-width:481px) and (max-width:600px){
-    .flex-container{
-        flex-direction: column;
-        align-items:center;
-        margin: auto;
-        max-width:480px;
-    }
-    .introducao{width:100%;}
-    .nav-bar{
-        align-items:center;
-        width:50%;
-        flex:2;
-    }
+    .flex-container{max-width:480px;}
+    .language-header{height:40px;}
+    .lh img{width:28px;height:18px;}
+    .nav-bar{width:50%;}
     .nav-bar h2{font-size: 22px;}
-    .lh{align-items: flex-end;}
     .menu-nav-bar li{font-size:14px;}
-    .flex-container-introducao{
-        align-items: center;
-        margin:auto;
-    }
-    .rounded-circle{width:80px;height:70px;}
-    .flex-container-introducao .rounded-circle{width:70px;height:px;margin-top:10px;}
-    .flex-container-introducao h2{font-size: 18px;}
-    .flex-container-introducao p{font-size: 14px;}
+    .flex-container-introducao h2{font-size: 24px;}
+    .flex-container-introducao p{font-size: 18px;}
     .itens-contato-introducao{max-width: 220px;}
-    #about-me{
-        display:flex;
-        justify-content: center;
-        height:250px;
-    }
-    .apresentacao-titulo{margin-top:30px;}
-    .apresentacao-titulo h2{align-self:flex-start;}
-    .c-about{
-        display: flex;
-        flex-direction: column;
-        max-width:320px;
-        width:70%;
-        align-items: center;
-    }
+    #about-me{height:250px;}
     .flex-container-apresentacao p{margin-bottom:20px;}
     #portfolio{height:1300px;}
     #timeline{height:1300px;}
-    .timelines{
-        align-items: center;
-        margin:0;
-    }
-    .img-texto{
-        flex:2;
-        flex-direction:column;
-        justify-content: center;
-    }
-    .timeline-circle{margin-bottom: 20px;}
-    .timelines p{
-        margin-right:40px;
-        margin-bottom:10px;
-        font-size:16px;
-    }
-    .t-data{color:#00acff;}
-    .itimeline h3{
-        margin-bottom: 10px;
-        font-size:20px;
-    }
-    .itimeline h4{
-        margin-bottom: 3px;
-        font-size:18px;
-    }
-    #contact-me{
-        height:1300px;
-        align-items:center;
-    }
-    #contact-me main{
-        height:1080px;
-        max-width: 300px;
-        padding: 15px;
-    }
-    .container-contact p{
-        padding: 10px;
-        font-size: 18px;
-    }
+    .img-texto{justify-content: center;}
+    .timelines p{font-size:16px;}
+    .itimeline h3{font-size:20px;}
+    .itimeline h4{font-size:18px;}
+    #contact-me{height:1300px;}
+    #contact-me main{height:1080px;max-width: 300px;padding: 15px;}
+    .container-contact p{padding: 10px;font-size: 18px;}
     .bt-forms{max-width:300px;}
-    .contact h2{
-        font-size: 24px;
-        align-self: center;
-    }
+    .contact h2{font-size: 24px;align-self: center;}
     .container-contact p{padding: 10px;}
     .forms{margin-top:80px;}
     .bt-forms{max-width:300px;}
     .socialmedia{max-width:230px;}
-    .icontact{
-        justify-content: center;
-        flex-wrap:wrap;
-    }
-    .socialmedia h4{font-size: 20px;
-    }
-    footer p{margin-bottom:10px;}
+    .icontact{justify-content: center;flex-wrap:wrap;}
+    .socialmedia h4{font-size: 20px;}
 }
 @media(min-width:601px) and (max-width:790px){
-    .flex-container{
-        flex-direction: column;
-        align-items:center;
-        margin: auto;
-        max-width:480px;
-    }
-    .lh{align-items: flex-end;}
-    .introducao{ width:100%;}
-    .nav-bar{
-        align-items:center;
-        width:100%;
-        flex:2;
-    }
-    .nav-bar h2{font-size: 22px;}
-    .menu-nav-bar li{font-size:14px;}
-    .flex-container-introducao{
-        align-items: center;
-        margin:auto;
-    }
-    .flex-container-introducao h2{font-size: 20px;}
-    .flex-container-introducao p{font-size: 14px;}
+    .flex-container{max-width:790px;}
+    .language-header{height:50px;}
+    .lh img{width:30px;height:20px;}
+    .nav-bar{width:100%;}
+    .nav-bar h2{font-size: 24px;}
+    .menu-nav-bar li{font-size:15px;margin-right:20px;}
+    .flex-container-introducao h2{font-size: 32px;}
+    .flex-container-introducao p{font-size: 20px;}
     .itens-contato-introducao{max-width: 220px;}
-    .rounded-circle{max-width:75px;max-height:75px;}
-    #about-me{
-        display:flex;
-        justify-content: center;
-        height:250px;
-    }
-    .apresentacao-titulo{margin-top:30px;}
-    .apresentacao-titulo h2{align-self:flex-start;}
-    .c-about{
-        display: flex;
-        flex-direction: column;
-        max-width:320px;
-        width:70%;
-        align-items: center;
-    }
-    .flex-container-apresentacao p{margin-bottom:20px;}
-    #portfolio{height:1200px;}
-    #timeline{height:1200px;}
-    .timelines{
-        align-items: center;
-        margin:0;
-    }
-    .img-texto{
-        flex:2;
-        flex-direction:column;
-        justify-content: center;
-    }
-    .timeline-circle{margin-bottom: 20px;}
-    .timelines p{
-        margin-right:40px;
-        margin-bottom:10px;
-        font-size:16px;
-    }
-    .t-data{color:#00acff;}
-    .itimeline h3{
-        margin-bottom: 10px;
-        font-size:20px;
-    }
-    .itimeline h4{
-        margin-bottom: 3px;
-        font-size:18px;
-    }
-    .itimeline p{font-size:14px;}
-    #contact-me{
-        height:1200px;
-        align-items:center;
-    }
-    #contact-me main{
-        height:1000px;
-        max-width: 450px;
-        padding: 15px;
-    }
-    .container-contact p{padding: 10px;}
+    .rounded-circle{max-width:135px;max-height:130px;}
+    #about-me{height:350px;}
+    .apresentacao-titulo h2{font-size:30px;}
+    .flex-container-apresentacao p{margin-bottom:20px;font-size: 22px;}
+    #portfolio{height:1500px;}
+    .titulo-top-proj{font-size:20px;}
+    .itop-projects{max-width:300px;max-height:400px;}
+    .itop-projects h4{font-size:22px;margin-bottom:10px;margin-top:10px;}
+    .itop-projects p{font-size: 18px;margin-bottom:10px;}
+    .itop-projects .bt{width:105px;height:30px;line-height:30px;}
+    #timeline{height:1300px;}
+    .titulo-timeline{font-size: 20px;}
+    .img-texto{justify-content: center;}
+    .timelines p{font-size:16px;}
+    .itimeline h3{font-size:22px;}
+    .itimeline h4{font-size:18px;}
+    .itimeline p{font-size:16px;}
+    #contact-me{height:1200px;}
+    .titulo-contact{font-size: 20px;}
+    #contact-me main{height:1000px;max-width: 450px;padding: 15px;}
+    .container-contact p{padding: 10px;font-size:22px}
     .bt-forms{max-width:450px;}
     .socialmedia{max-width:300px;}
     .socialmedia h4{font-size: 22px;}
     footer p{margin-bottom:10px;}
 }
 @media(min-width:791px) and (max-width:860px){
-    .flex-container{
-        flex-direction: column;
-        align-items:center;
-        margin: auto;
-        max-width:480px;
-    }
-    .lh{align-items: flex-end;}
-    .introducao{width:100%; }
-    .nav-bar{
-        align-items:center;
-        width:100%;
-        flex:2;
-    }
+    .flex-container{max-width:860px;}
+    .language-header{height:60px;}
+    .lh img{width:32px;height:22px;}
+    .nav-bar{width:100%;}
     .nav-bar h2{font-size: 24px;}
     .menu-nav-bar li{font-size:16px;}
-    .flex-container-introducao{
-        align-items: center;
-        margin:auto;
-    }
-    .flex-container-introducao h2{font-size: 24px;}
-    .flex-container-introducao p{font-size: 16px;}
+    .flex-container-introducao h2{font-size: 32px;}
+    .flex-container-introducao p{font-size: 22px;}
     .itens-contato-introducao{max-width: 220px;}
-    #about-me{
-        display:flex;
-        justify-content: center;
-        height:250px;
-    }
-    .apresentacao-titulo{margin-top:30px;}
-    .apresentacao-titulo h2{align-self:flex-start;}
-    .c-about{
-        display: flex;
-        flex-direction: column;
-        max-width:320px;
-        width:70%;
-        align-items: center;
-    }
-    .flex-container-apresentacao p{margin-bottom:20px;}
-    #portfolio{height:1200px;}
-    #timeline{height:1200px;}
-    .timelines{
-        align-items: center;
-        margin:0;
-    }
-    .img-texto{
-        flex:2;
-        flex-direction:column;
-        justify-content: center;
-    }
-    .timeline-circle{margin-bottom: 20px;}
-    .timelines p{
-        margin-right:40px;
-        margin-bottom:10px;
-    }
-    .t-data{color:#00acff;}
-    .itimeline h3{margin-bottom: 10px;}
-    .itimeline h4{margin-bottom: 3px;}
-    #contact-me{
-        height:1200px;
-        align-items:center;
-    }
-    #contact-me main{
-        height:1000px;
-        max-width: 500px;
-        padding: 15px;
-    }
-    .container-contact p{padding: 10px;}
+    #about-me{height:350px;}
+    .apresentacao-titulo h2{font-size: 32px;}
+    .flex-container-apresentacao p{margin-bottom:20px;font-size:20px;}
+    .titulo-top-proj{font-size:24px;}
+    #portfolio{height:1500px;}
+    .itop-projects{max-width:350px;max-height:400px;}
+    .itop-projects h4{font-size:24px;margin-bottom:10px;margin-top:10px;}
+    .itop-projects p{font-size: 20px;margin-bottom:10px;}
+    .itop-projects .bt{width:105px;height:30px;line-height:30px;}
+    #timeline{height:1300px;}
+    .titulo-timeline{font-size:24px;}
+    .img-texto{justify-content: center;}
+    .timelines p{font-size:18px;}
+    .itimeline h3{font-size: 24px;}
+    .itimeline h4{font-size:22px;}
+    .itimeline p{font-size: 18px;}
+    #contact-me{height:1200px;}
+    #contact-me main{height:1000px;max-width: 500px;padding: 15px;}
+    .container-contact p{font-size:24px;}
+    .titulo-contact{font-size: 24px;}
     .bt-forms{max-width:500px;}
     .socialmedia{max-width:500px;}
-    .socialmedia h4{font-size: 22px;}
-    footer p{margin-bottom:10px;}
 }
 @media(min-width:861px) and (max-width:997px){
-    .flex-container{
-        flex-direction: column;
-        align-items:center;
-        margin: auto;
-        max-width:480px;
-    }
-    .lh{align-items: flex-end;}
-    .introducao{width:100%; }
-    .nav-bar{
-        align-items:center;
-        width:100%;
-        flex:2;
-    }
-    .nav-bar h2{font-size: 24px;}
-    .menu-nav-bar li{font-size:16px;}
-    .flex-container-introducao{
-        align-items: center;
-        margin:auto;
-    }
-    .flex-container-introducao h2{font-size: 24px;}
-    .flex-container-introducao p{font-size: 16px;}
+    .flex-container{max-width:997px;}
+    .language-header{height:60px;}
+    .lh img{width:36px;height:26px;}
+    .nav-bar{width:100%;}
+    .nav-bar h2{font-size: 30px;margin-top:10px;}
+    .menu-nav-bar li{font-size:18px;margin-right:5px;}
+    .rounded-circle{width:135px;height: 125px;}
+    .flex-container-introducao h2{font-size: 32px;}
+    .flex-container-introducao p{font-size: 22px;}
     .itens-contato-introducao{max-width: 220px;}
-    #about-me{
-        display:flex;
-        justify-content: center;
-        height:250px;
-    }
-    .apresentacao-titulo{margin-top:30px;}
-    .apresentacao-titulo h2{align-self:flex-start;}
-    .c-about{
-        display: flex;
-        flex-direction: column;
-        max-width:320px;
-        width:70%;
-        align-items: center;
-    }
-    .flex-container-apresentacao p{margin-bottom:20px;}
-    #portfolio{height:1300px;}
-    #timeline{height:1200px;}
-    .timelines{
-        align-items: center;
-        margin:0;
-    }
-    .img-texto{
-        flex:2;
-        flex-direction:column;
-        justify-content: center;
-    }
-    .timeline-circle{margin-bottom: 20px;}
-    .timelines p{
-        margin-right:40px;
-        margin-bottom:10px;
-    }
-    .t-data{color:#00acff;}
-    .itimeline h3{margin-bottom: 10px;}
-    .itimeline h4{margin-bottom: 3px;}
-    #contact-me{
-        height:1300px;
-        align-items:center;
-    }
-    #contact-me main{
-        height:1000px;
-        max-width: 500px;
-        padding: 15px;
-    }
-    .container-contact p{padding: 10px;}
+    #about-me{height:350px;}
+    .apresentacao-titulo h2{font-size:30px;}
+    .flex-container-apresentacao p{margin-bottom:20px;font-size: 22px;}
+    #portfolio{height:1500px;}
+    .itop-projects{max-width:300px;max-height:400px;}
+    .itop-projects h4{font-size:24px;margin-bottom:10px;margin-top:10px;}
+    .itop-projects p{font-size: 20px;margin-bottom:10px;}
+    .itop-projects .bt{width:105px;height:30px;line-height:30px;}
+    .titulo-top-proj{font-size:24px;}
+    #timeline{height:1300px;}
+    .timelines .t-data{font-size:20px;}
+    .itimeline h3{font-size:26px;}
+    .itimeline h4{font-size:24px;}
+    .itimeline p{font-size:20px;}
+    .titulo-timeline{font-size: 24px;}
+    .img-texto{justify-content: center;}
+    #contact-me{height:1300px;align-items:center;}
+    .titulo-contact{font-size: 24px;}
+    #contact-me main{height:1000px;max-width: 500px;padding: 15px;}
     .bt-forms{max-width:500px;}
     .socialmedia{max-width:500px;}
+}
+@media(max-width:997px){
+    .flex-container{flex-direction: column;align-items:center;margin: auto;}
+    .nav-bar{align-items:center;flex:2;}
+    .flex-container-introducao{align-items: center;margin:auto;}
+    .introducao{width:100%;}
+    .lh{align-items: center;}
+    #about-me{display:flex;justify-content: center;}
+    .c-about{display: flex;flex-direction: column;max-width:320px;width:70%;align-items: center;}
+    .apresentacao-titulo{margin-top:30px;}
+    .apresentacao-titulo h2{align-self:flex-start;}
+    .timelines{align-items: center;margin:0;}
+    .timelines p{margin-right:40px;margin-bottom:10px;}
+    .itimeline h3{margin-bottom: 10px;}
+    .itimeline h4{margin-bottom: 3px;}
+    .t-data{color:#00acff;}
+    .timeline-circle{margin-bottom: 20px;}
+    .img-texto{flex:2;flex-direction:column;}
+    .timeline-circle{margin-bottom: 20px;}
+    #contact-me{align-items:center;}
+    .container-contact p{padding: 10px;}
     .socialmedia h4{font-size: 22px;}
     footer p{margin-bottom:10px;}
 }
+@media(min-width:1441px){
+    .flex-container{max-width:1441px;}
+    .language-header{height:35px;}
+    .lh img{width:30px;height:19px;}
+    .nav-bar{width:100%;}
+    .nav-bar h2{font-size: 30px;margin-top:10px;}
+    .menu-nav-bar{max-width:400px;}
+    .menu-nav-bar li{font-size:22px;margin-right:5px;}
+    .rounded-circle{width:150px;height: 147px;}
+    .flex-container-introducao h2{font-size: 42px;}
+    .flex-container-introducao p{font-size: 32px;}
+    .itens-contato-introducao{max-width: 320px;}
+    #about-me{height:350px;display:flex;justify-content:center;}
+    .c-about{display: flex;flex-direction: column;width:100%;max-width:600px;margin-top:30px;}
+    .apresentacao-titulo{margin:0;}
+    .apresentacao-titulo h2{font-size:30px;}
+    .flex-container-apresentacao p{margin-bottom:20px;font-size: 22px;}
+    #portfolio{height:600px;}
+    .itop-projects{max-width:300px;max-height:400px;}
+    .itop-projects h4{font-size:24px;margin-bottom:10px;margin-top:10px;}
+    .itop-projects p{font-size: 20px;margin-bottom:10px;}
+    .itop-projects .bt{width:105px;height:30px;line-height:30px;}
+    .titulo-top-proj{font-size:24px;}
+    #timeline{height:900px;}
+    .timelines .t-data{font-size:20px;}
+    .itimeline h3{font-size:26px;}
+    .itimeline h4{font-size:24px;}
+    .itimeline p{font-size:20px;}
+    .titulo-timeline{font-size: 24px;}
+    .img-texto{justify-content: center;}
+    #contact-me{height:900px;align-items:center;margin:0;}
+    .titulo-contact{font-size: 24px;}
+    #contact-me main{height:500px;max-width: 1000px;padding: 15px;}
+    .contact h2{font-size: 34px;}
+    .text-forms p{font-size:22px;}
+    label{font-size:20px;}
+    button{font-size:18px;}
+    .bt-forms{max-width:500px;}
+    .socialmedia{max-width:500px;}
+    .c-sitemap p{font-size:32px;}
+    .ct-sitemap li a{font-size:24px;}
+    .ftexto p{font-size:20px;}
+    .ftexto a{font-size:20px;}
+}
 @media(max-width:700px){img .rounded-circle{width:50%;height:50%;}}
+@media(max-width:900px){.ct-sitemap{align-items:center;text-align: center;}}
