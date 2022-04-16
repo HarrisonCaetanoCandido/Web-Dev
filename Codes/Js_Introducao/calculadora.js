@@ -18,37 +18,37 @@ else
     else
     {
         function soma(){
-            resultado=n1+n1;
+            resultado=n1+n2;
             alert(`${n1}+${n2}=${resultado}`);
             novaOperacao();
         }
 
         function subtracao(){
-            resultado=n1-n1;
+            resultado=n1-n2;
             alert(`${n1}-${n2}=${resultado}`);
             novaOperacao();
         }
 
         function multiplicacao(){
-            resultado=n1*n1;
+            resultado=n1*n2;
             alert(`${n1}*${n2}=${resultado}`);
             novaOperacao();
         }
 
         function divisao(){
-            resultado=n1/n1;
+            resultado=n1/n2;
             alert(`${n1}/${n2}=${resultado}`);
             novaOperacao();
         }
 
         function divisao_int(){
-            resultado=n1%n1;
+            resultado=n1%n2;
             alert(`O resto da divisao entre ${n1} e ${n2} é igual a ${resultado}`)
             novaOperacao();
         }
 
         function potenciacao(){
-            resultado=n1**n1;
+            resultado=n1**n2;
             alert(`${n1}^${n2}=${resultado}`);
             novaOperacao();
         }
@@ -63,7 +63,6 @@ else
                 alert('Digite uma oção válida!')
                 novaOperacao();
             }
-            alert(`${n1}+${n2}=${resultado}`);
         }
 
         if(operacao==1){// dava pra usar switch tb

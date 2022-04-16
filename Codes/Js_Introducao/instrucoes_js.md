@@ -11,9 +11,9 @@ São dados que as variaveis podem guardar.
 
 ## Podemos declarar como:
 
-var - Escopo global e local, pode ter seu valor alterado, se não tiver um valor inicial será tratada como null
-let - Escopo local de bloco, pode ter seu valor alterado, se não tiver um valor inicical será tratada como null
-const - Escopo local de bloco, somente leitura, o valor inicial é obrigatório e não pode ser alterado
+var - Escopo global e local, pode ter seu valor alterado, se não tiver um valor inicial será tratada como null, faz hoisting
+let - Escopo local de bloco, pode ter seu valor alterado, se não tiver um valor inicical será tratada como null, não faz hoisting
+const - Escopo local de bloco, somente leitura, o valor inicial é obrigatório e não pode ser alterado, não faz hoisting
 
 ## Escopo
 
@@ -27,7 +27,9 @@ Quando a variável é declarada dentro de um bloco, sua visibilidade pode ficar 
 
  '=' - atribuicao
 '==' - comparacao
-'===' - Compara tanto o valor quanto o tipo
+'===' - compara tanto o valor quanto o tipo
+'!=' - diferente
+'!==' - valor e tipo diferentes
 
 '&&' - and
 '||' - or
@@ -75,7 +77,7 @@ if,else - Igual em c
 
 if ternário - Podemos também fazer uma verificação em uma única linha usando o "if" ternário:
 
-Ex:  [condição]?[instrução1]:[instrução2];
+Ex:  [condição]?[instrução1(se sim)]:[instrução2(se nao)];
 
 ### for
 Executa uma instrucao segundo uma condicao ate que ela seja falsa
@@ -100,6 +102,49 @@ nomeDaFuncao();
 ## Métodos aritméticos de Js
 
 Number() - converter valores em números
+
 Prompt() - registrar entradas de usuário
+
 Alert() - mostrar mensagem ao usuário
+
 Template Strings - usar strings junto com expressões numericas
+
+# Operadores
+
+## Atribuição
+
+= -> x=y
+
++= -> x=x+y
+
+*= -> x=x*y
+
+/= -> x=x/y
+
+%= -> x=x%y
+
+#### Hoisting: nome do conceito de atribuir valor a uma variável antes de ela ser declarada, pois ele supõe ser uma variável global
+
+# Estrutura de Dados
+
+Js é uma linguagem de tipagem dinâmica e fraca
+
+### Primitivos
+
+Sem métodos:
+
+Numbers,
+
+Strings,
+
+Booleans,
+
+Null,
+
+Undefined.
+
+### Não primitivos
+
+Objects,
+
+arrays.
