@@ -64,60 +64,38 @@
                                         <div class="flex-container IMTRP-proj">
                                             <p class="source-code"> 
                                                 import pandas as pd<br><br>
-
                                                 #Understand how the Churn values are distribuited between the clients<br><br>
-
                                                 # Step 1: Import database<br><br>
-
                                                 dataset=pd.read_csv("telecom_users.csv")<br><br>
-
                                                 # Step 2: Visualize database<br>
                                                 #display(dataset)<br><br>
-
                                                 # Passo 3: Data processing(Correct database problems)<br>
                                                 # Useless column<br>
                                                 # axis = 0 -> line<br>
                                                 # axis = 1 -> column<br>
                                                 dataset=dataset.drop("Unnamed: 0", axis=1) #DROP request (WHAT, AXIS=COLUMN_OR_LINE)<br>
                                                 display(dataset)<br><br><br>
-
-
                                                 #If "lira" induces to 'error', so we gonna turn it to NULL<br>
-
                                                 dataset["TotalGasto"]=pd.to_numeric(dataset["TotalGasto"], errors='coerce')<br>
                                                 #'coerce' is the word that indicates NULL<br><br>
-
                                                 print(dataset.info())<br><br>
-
                                                 # Delete NULL values<br>
                                                 #all -> deletes all the NULL columns<br>
                                                 #any -> deletes the columns that got at least one NULL value<br><br>
-
                                                 dataset=dataset.dropna(how="all", axis=1) #Deletes NULL columns<br><br>
-
                                                 dataset=dataset.dropna(how="any", axis=0) #Deletes the lines whose got at least one NULL value<br><br>
-
                                                 print(dataset.info())<br><br>
-
                                                 # Step 4: Inicial Analysis<br><br>
-
                                                 print(dataset["Churn"].value_counts())<br>
                                                 print(dataset["Churn"].value_counts(normalize=True).map("{:.1%}".format))<br><br>
-
                                                 # Normalize gets us the percentual value<br><br>
-
                                                 # Step 5: Detailed client Analysis<br>
                                                 # https://plotly.com/python/histograms/ to set the colors<br>
                                                 import plotly.express as px<br><br>
-
                                                 grafico = px.histogram(dataset, x="MesesComoCliente", color="Churn")<br>
                                                 grafico.show()<br><br>
-
                                                 import plotly.express as px<br><br>
-
                                                 for coluna in dataset.columns:<br><br><br>
-                                                    
-                                                    
                                                     grafico = px.histogram(dataset, x=coluna, color="Churn")<br>
                                                     grafico.show()<br>
                                             </p>
