@@ -19,6 +19,9 @@
 'git add <arquivo> <pasta>/' - Manda pasta e arquivo para staged
 'git rm <pasta>/<arquivo' - Remover pasta e arquivo dentro dela
 'git remote add origin' - Aponta o Local Repository para o Remote Repository
+'git remote remove origin' - remove o endereço do remote repository
+'git remote add origin git://url' - adiciona outro endereço
+'git remote set-url origin git://ulr' - aponta para novo endereço
 
 ____________Renomear Branch_____________
 
