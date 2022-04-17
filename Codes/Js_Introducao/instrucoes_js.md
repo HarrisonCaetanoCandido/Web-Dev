@@ -148,3 +148,10 @@ Undefined.
 Objects,
 
 arrays.
+
+## Empty, Undefined e Null
+Empty - Variáveis declaradas, mas sem valor
+
+Undefined - Sem tipo, sem valor
+
+Null - Variáveis propositalmente nulas, aqui entra a ideia de falsy, que é o falso por ser nulo, mas não em booleano
