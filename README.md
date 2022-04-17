@@ -1,5 +1,5 @@
-# Desenv-Web
-Repositório com projetos de desenvolvimento web.
+# Web-Development
+Web Development projects repository.
 
-## Links Úteis
+## Useful Links
 [Sintaxe Básica Markdown](https://www.markdownguide.org/basic-syntax/)
