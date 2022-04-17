@@ -1,10 +1,28 @@
 *{font-family:'Open Sans',sans-serif;margin:0;padding:0;}
 a{text-decoration: none;}
 ul{list-style:none;}
-header{display:flex;align-items:center;width:100%;color:whitesmoke;height:60px;}
+header{
+    display:flex;align-items:center;
+    width:100%;color:whitesmoke;
+    flex-direction: column;
+    position:fixed;
+    top:0;
+    left:0;
+    transition:0.6s;
+    z-index: 100000;
+    padding: 20px 100px;
+    box-sizing:border-box;
+}
+header.sticky{
+    padding: 0 100px;
+    padding-top:5px;
+    padding-bottom:13px;
+    background:#222;
+    box-shadow: 0 0 1em #00000080;
+}
 .o1{order:1;}.o2{order:2;}
 html, body{width:100%;overflow-x: hidden;}
-.language-header{display:flex;background-color: rgba(0, 0, 0, 0.87);height:25px;width:100%;}
+.language-header{display:flex;height:20px;width:100%;}
 .lh{justify-content: flex-end;width:100%;}
 .lh-lh img{margin-right:5px;}
 .bt{
@@ -24,7 +42,7 @@ html, body{width:100%;overflow-x: hidden;}
     margin: auto;
 }
 .nav-bar{justify-content: space-between;}
-.nav-bar h2{font-size: 22px;}
+.nav-bar h2{font-size: 22px;transition:0.5s; }
 .menu-nav-bar{
     display: flex;
     align-items: center;
@@ -33,7 +51,7 @@ html, body{width:100%;overflow-x: hidden;}
     width:100%;
     margin-top: 5px;
 }
-.menu-nav-bar a{color: whitesmoke;}
+.menu-nav-bar a{color: whitesmoke;transition:0.5s;}
 .menu-nav-bar a:hover{border-bottom: 1px solid #00acff; }
 .introducao{
     display:flex;
@@ -72,7 +90,7 @@ html, body{width:100%;overflow-x: hidden;}
     margin-bottom:10px;
 }
 #about-me{ 
-    height: 40vh;
+    height: 45vh;
     background-color: white;
     color: rgba(0, 0, 0, 0.90);
 }
@@ -421,16 +439,20 @@ footer{
 }
 @media(min-width:200px) and (max-width:309px){
     .flex-container{max-width:309px;}
+    .language-header{height:25px;}
     .nav-bar h2{font-size: 16px;}
     .menu-nav-bar li{font-size:12px;}
     .rounded-circle{width:80px;height:78px;}
     .flex-container-introducao h2{font-size: 18px;}
     .flex-container-introducao p{font-size: 14px;}
     .itens-contato-introducao{max-width: 220px;}
-    #about-me{height:350px;}
+    #about-me{height:370px;}
+    .c-about{margin:60px 0 80px 0;}
+    .apresentacao-titulo h2{margin-bottom: 20px;}
     .flex-container-apresentacao p{margin-bottom:20px;}
     #portfolio{height:1300px;}
-    #timeline{height:1400px;}
+    .titulo-top-proj{margin:60px 0 0 0;height:70px;}
+    #timeline{height:1500px;}
     .timelines{align-items: flex-start;}
     .timelines p{margin-right: 53px;}
     #contact-me{height:1300px;}
@@ -445,16 +467,19 @@ footer{
 }
 @media(min-width:310px) and (max-width:369px){
     .flex-container{max-width: 369px;}
-    .language-header{height:40px;}
-    .lh img{width:28px;height:18px;}
+    .language-header{height:30px;}
+    .lh img{width:25px;height:16px;}
     .nav-bar h2{font-size: 16px;}
     .menu-nav-bar li{font-size:12px;}
     .flex-container-introducao h2{font-size: 18px;}
     .flex-container-introducao p{font-size: 14px;}
     .itens-contato-introducao{max-width: 220px;}
-    #about-me{height:250px;}
+    #about-me{height:350px;}
+    .c-about{margin:60px 0 80px 0;}
+    .apresentacao-titulo h2{margin-bottom:20px;}
     .flex-container-apresentacao p{margin-bottom:20px;}
     #portfolio{height:1300px;}
+    .titulo-top-proj{margin:60px 0 0 0;height:70px;}
     #timeline{height:1300px;}
     .img-texto{justify-content: center;}
     .timeline-circle{margin-bottom: 20px;}
@@ -469,18 +494,19 @@ footer{
     .flex-container{max-width:480px;}
     .language-header{height:30px;}
     .lh img{width:28px;height:18px;}
-    .nav-bar{width:50%;}
+    .nav-bar{width:100%;}
     .nav-bar h2{font-size: 22px;}
     .menu-nav-bar li{font-size:16px;}
     .rounded-circle{width:95px;height:90px;}
     .flex-container-introducao h2{font-size: 24px;}
     .flex-container-introducao p{font-size: 20px;}
     .itens-contato-introducao{max-width: 220px;}
-    #about-me{height:250px;}
-    .apresentacao-titulo h2{font-size:24px;}
+    #about-me{height:380px;}
+    .c-about{margin:80px 0;}
+    .apresentacao-titulo h2{font-size:24px;margin-bottom:20px;}
     .flex-container-apresentacao p{margin-bottom:20px;font-size:17px;}
-    #portfolio{height:1300px;}
-    .titulo-top-proj{font-size: 20px;}
+    #portfolio{height:1500px;}
+    .titulo-top-proj{font-size: 20px;margin:60px 0 10px 0;height:100px;}
     .itop-projects h4{font-size:20px;}
     .itop-projects p{font-size:17px;}
     #timeline{height:1300px;}
@@ -490,8 +516,8 @@ footer{
     .itimeline h3{font-size:20px;}
     .itimeline h4{font-size:18px;}
     .itimeline p{font-size:14px;}
-    #contact-me{height:1200px;}
-    .titulo-contact{font-size:20px;}
+    #contact-me{height:1300px;}
+    .titulo-contact{font-size:20px;margin:60px 0 20px 0;height:70px;}
     #contact-me main{height:1000px;max-width: 290px;padding: 15px;}
     .container-contact p{padding: 10px;}
     .bt-forms{max-width:300px;}
@@ -500,17 +526,20 @@ footer{
 }
 @media(min-width:481px) and (max-width:600px){
     .flex-container{max-width:480px;}
-    .language-header{height:40px;}
-    .lh img{width:28px;height:18px;}
-    .nav-bar{width:50%;}
+    .language-header{height:30px;}
+    .lh img{width:26px;height:16px;}
+    .nav-bar{width:100%;}
     .nav-bar h2{font-size: 22px;}
     .menu-nav-bar li{font-size:14px;}
+    .introducao{padding-top:70px;}
     .flex-container-introducao h2{font-size: 24px;}
     .flex-container-introducao p{font-size: 18px;}
     .itens-contato-introducao{max-width: 220px;}
-    #about-me{height:250px;}
+    #about-me{height:350px;}
+    .c-about{margin:80px 0;}
     .flex-container-apresentacao p{margin-bottom:20px;}
-    #portfolio{height:1300px;}
+    #portfolio{height:1300px;margin-top:10px;}
+    .titulo-top-proj{margin:70px 0 0 0;height:60px;}
     #timeline{height:1300px;}
     .img-texto{justify-content: center;}
     .timelines p{font-size:16px;}
@@ -520,13 +549,13 @@ footer{
     #contact-me main{height:1080px;max-width: 300px;padding: 15px;}
     .container-contact p{padding: 10px;font-size: 18px;}
     .bt-forms{max-width:300px;}
-    .contact h2{font-size: 24px;align-self: center;}
+    .contact h2{font-size:24px;align-self: center;}
     .container-contact p{padding: 10px;}
     .forms{margin-top:80px;}
     .bt-forms{max-width:300px;}
     .socialmedia{max-width:230px;}
-    .icontact{justify-content: center;flex-wrap:wrap;}
-    .socialmedia h4{font-size: 20px;}
+    .icontact{justify-content:center;flex-wrap:wrap;}
+    .socialmedia h4{font-size:20px;}
 }
 @media(min-width:601px) and (max-width:790px){
     .flex-container{max-width:790px;}
@@ -535,16 +564,18 @@ footer{
     .nav-bar{width:100%;}
     .nav-bar h2{font-size: 22px;margin:0 10px;}
     .menu-nav-bar li{font-size:15px;margin-right:5px;}
+    .introducao{padding-top:70px;}
     .flex-container-introducao h2{font-size: 28px;}
     .flex-container-introducao p{font-size: 18px;}
     .itens-contato-introducao{max-width: 220px;}
     .rounded-circle{width: 85px;height: 85px;margin-top:15px;}
-    #about-me{height:350px;}
-    .c-about{margin-bottom:50px;}
-    .apresentacao-titulo h2{font-size:28px;}
+    #about-me{height:410px;}
+    .c-about{margin:80px 0;}
+    .apresentacao-titulo h2{font-size:28px;margin-bottom:20px;}
     .flex-container-apresentacao p{margin-bottom:20px;font-size: 20px;}
     #portfolio{height:1500px;}
-    .titulo-top-proj{font-size:20px;}
+    .titulo-top-proj{font-size:20px;margin:70px 0 0 0;height:70px;}
+    .top-projects{margin-top:30px;}
     .itop-projects{max-width:300px;max-height:400px;}
     .itop-projects h4{font-size:22px;margin-bottom:10px;margin-top:10px;}
     .itop-projects p{font-size: 18px;margin-bottom:10px;}
@@ -556,8 +587,8 @@ footer{
     .itimeline h3{font-size:22px;}
     .itimeline h4{font-size:18px;}
     .itimeline p{font-size:16px;}
-    #contact-me{height:1200px;}
-    .titulo-contact{font-size: 20px;}
+    #contact-me{height:1300px;}
+    .titulo-contact{font-size: 20px;margin-top:60px;height:70px;}
     #contact-me main{height:1000px;max-width: 450px;padding: 15px;}
     .container-contact p{padding: 10px;font-size:22px}
     .bt-forms{max-width:450px;}
@@ -576,10 +607,11 @@ footer{
     .flex-container-introducao h2{font-size: 32px;}
     .flex-container-introducao p{font-size: 22px;}
     .itens-contato-introducao{max-width: 220px;}
-    #about-me{height:350px;}
-    .apresentacao-titulo h2{font-size: 32px;}
+    #about-me{height:430px;}
+    .c-about{margin:80px 0;}
+    .apresentacao-titulo h2{font-size: 32px;margin-bottom:20px;}
     .flex-container-apresentacao p{margin-bottom:20px;font-size:20px;}
-    .titulo-top-proj{font-size:24px;}
+    .titulo-top-proj{font-size:24px;margin:90px 0 0 0;height:70px;}
     #portfolio{height:1500px;}
     .itop-projects{max-width:350px;max-height:400px;}
     .itop-projects h4{font-size:24px;margin-bottom:10px;margin-top:10px;}
@@ -592,33 +624,34 @@ footer{
     .itimeline h3{font-size: 24px;}
     .itimeline h4{font-size:22px;}
     .itimeline p{font-size: 18px;}
-    #contact-me{height:1200px;}
+    #contact-me{height:1300px;}
     #contact-me main{height:1000px;max-width: 500px;padding: 15px;}
     .container-contact p{font-size:24px;}
-    .titulo-contact{font-size: 24px;}
+    .titulo-contact{font-size: 24px;margin:70px 0 20px 0;height:60px;}
     .bt-forms{max-width:500px;}
     .socialmedia{max-width:500px;}
 }
 @media(min-width:861px) and (max-width:997px){
     .flex-container{max-width:997px;}
-    .language-header{height:60px;}
-    .lh img{width:36px;height:26px;}
+    .language-header{height:40px;}
+    .lh img{width:34px;height:24px;}
     .nav-bar{width:100%;}
     .nav-bar h2{font-size: 30px;margin-top:10px;}
-    .menu-nav-bar li{font-size:18px;margin-right:5px;}
+    .menu-nav-bar li{font-size:18px;margin-right:10px;}
     .rounded-circle{width:135px;height: 125px;}
     .flex-container-introducao h2{font-size: 32px;}
     .flex-container-introducao p{font-size: 22px;}
     .itens-contato-introducao{max-width: 220px;}
-    #about-me{height:350px;}
-    .apresentacao-titulo h2{font-size:30px;}
+    #about-me{height:480px;}
+    .c-about{margin:100px 0 120px 0;}
+    .apresentacao-titulo h2{font-size:30px;margin-bottom:20px;}
     .flex-container-apresentacao p{margin-bottom:20px;font-size: 22px;}
-    #portfolio{height:1500px;}
+    #portfolio{height:1700px;}
     .itop-projects{max-width:300px;max-height:400px;}
     .itop-projects h4{font-size:24px;margin-bottom:10px;margin-top:10px;}
     .itop-projects p{font-size: 20px;margin-bottom:10px;}
     .itop-projects .bt{width:105px;height:30px;line-height:30px;}
-    .titulo-top-proj{font-size:24px;}
+    .titulo-top-proj{font-size:24px;margin:110px 0 0 0;height:70px;}
     #timeline{height:1300px;}
     .timelines .t-data{font-size:20px;}
     .itimeline h3{font-size:26px;}
@@ -627,13 +660,15 @@ footer{
     .titulo-timeline{font-size: 24px;}
     .img-texto{justify-content: center;}
     #contact-me{height:1300px;align-items:center;}
-    .titulo-contact{font-size: 24px;}
+    .titulo-contact{font-size: 24px;margin-top:70px;height:80px;}
     #contact-me main{height:1000px;max-width: 500px;padding: 15px;}
     .bt-forms{max-width:500px;}
     .socialmedia{max-width:500px;}
 }
 @media(max-width:997px){
     .flex-container{flex-direction: column;align-items:center;margin: auto;}
+    header{padding:8px;}
+    header.sticky{padding:5px;}
     .nav-bar{align-items:center;flex:2;}
     .flex-container-introducao{align-items: center;margin:auto;}
     .introducao{width:100%;}
@@ -667,8 +702,8 @@ footer{
     .flex-container-introducao h2{font-size: 42px;}
     .flex-container-introducao p{font-size: 32px;}
     .itens-contato-introducao{max-width: 320px;}
-    #about-me{height:350px;display:flex;justify-content:center;}
-    .c-about{display: flex;flex-direction: column;width:100%;max-width:600px;margin-top:30px;}
+    #about-me{height:430px;display:flex;justify-content:center;}
+    .c-about{display: flex;flex-direction: column;width:100%;max-width:600px;margin-top:120px;}
     .apresentacao-titulo{margin:0;}
     .apresentacao-titulo h2{font-size:30px;}
     .flex-container-apresentacao p{margin-bottom:20px;font-size: 22px;}
@@ -677,7 +712,7 @@ footer{
     .itop-projects h4{font-size:24px;margin-bottom:10px;margin-top:10px;}
     .itop-projects p{font-size: 20px;margin-bottom:10px;}
     .itop-projects .bt{width:105px;height:30px;line-height:30px;}
-    .titulo-top-proj{font-size:24px;}
+    .titulo-top-proj{font-size:24px;margin:80px 0 10px 0;height:110px;}
     #timeline{height:900px;}
     .timelines .t-data{font-size:20px;}
     .itimeline h3{font-size:26px;}
