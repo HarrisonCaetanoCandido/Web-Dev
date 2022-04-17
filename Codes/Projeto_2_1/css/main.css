@@ -540,6 +540,7 @@ footer{
     .itens-contato-introducao{max-width: 220px;}
     .rounded-circle{width: 90px;height: 90px;margin-top:20px;}
     #about-me{height:350px;}
+    .c-about{margin-bottom:50px;}
     .apresentacao-titulo h2{font-size:28px;}
     .flex-container-apresentacao p{margin-bottom:20px;font-size: 20px;}
     #portfolio{height:1500px;}
@@ -639,7 +640,7 @@ footer{
     .lh{align-items: center;}
     #about-me{display:flex;justify-content: center;}
     .c-about{display: flex;flex-direction: column;max-width:320px;width:70%;align-items: center;}
-    .apresentacao-titulo{margin-top:30px;}
+    .apresentacao-titulo{margin:0;margin-top:30px;}
     .apresentacao-titulo h2{align-self:flex-start;}
     .timelines{align-items: center;margin:0;}
     .timelines p{margin-right:40px;margin-bottom:10px;}
