@@ -531,14 +531,14 @@ footer{
 @media(min-width:601px) and (max-width:790px){
     .flex-container{max-width:790px;}
     .language-header{height:30px;}
-    .lh img{width:28px;height:18px;}
+    .lh img{width:26px;height:18px;}
     .nav-bar{width:100%;}
-    .nav-bar h2{font-size: 22px;margin-top:10px;}
+    .nav-bar h2{font-size: 22px;margin:0 10px;}
     .menu-nav-bar li{font-size:15px;margin-right:5px;}
     .flex-container-introducao h2{font-size: 28px;}
     .flex-container-introducao p{font-size: 18px;}
     .itens-contato-introducao{max-width: 220px;}
-    .rounded-circle{width: 90px;height: 90px;margin-top:20px;}
+    .rounded-circle{width: 85px;height: 85px;margin-top:15px;}
     #about-me{height:350px;}
     .c-about{margin-bottom:50px;}
     .apresentacao-titulo h2{font-size:28px;}
@@ -567,7 +567,7 @@ footer{
 }
 @media(min-width:791px) and (max-width:860px){
     .flex-container{max-width:860px;}
-    .language-header{height:60px;}
+    .language-header{height:40px;}
     .lh img{width:32px;height:22px;}
     .nav-bar{width:100%;}
     .nav-bar h2{font-size: 24px;}
