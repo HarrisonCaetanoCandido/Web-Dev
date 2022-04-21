@@ -4,6 +4,8 @@ Regra de uso de dados, quanto mais forte for a tipagem, maior a obrigação da d
 Sendo assim, o JavaScript possui Tipagem fraca, ou seja, se atribuir 1 a uma variável, ela já é interpretada
 como uma variavel de numero inteiro
 
+#### OBS: Sempre que for rodar no terminal do vscode dê o comando npm install prompt-sync
+
 # Variáveis e como declarar
 
 ## Tipos primitivos
