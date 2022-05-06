@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador</title>
+    <style>
+        body{height:auto;width:auto;}
+        html{margin:0;}
+        main{display:flex;justify-content:center;}
+        .principal{display:flex;flex-direction:column;max-width:500px;width:100%;margin:10px;}
+        input{max-width:200px;width:100%;align-self:center;margin-bottom:10px;}
+    </style>
+</head>
+<body>
+    <main>
+        <div class="principal">
+            <input type="text" id="buscador" placeholder="Pesquisar vaga">
+        <table>
+            <thead>
+                <tr>
+                    <th>Vaga</th>
+                </tr>
+            </thead>
+            <tbody id="tbody"></tbody>
+        </table>
+        </div>
+    </main>
+    <script src="./index.js"></script>
+</body>
+</html>
