@@ -157,3 +157,31 @@ Empty - Variáveis declaradas, mas sem valor
 Undefined - Sem tipo, sem valor
 
 Null - Variáveis propositalmente nulas, aqui entra a ideia de falsy, que é o falso por ser nulo, mas não em booleano
+
+# Modulos
+Arquivos Js que tem a capacidade de exportar e importar informações de outros arquivos do mesmo tipo.
+
+Vantagens: Organização do código, compartilhamento de variáveis em escopos diferentes, explicita as dependências dos arquivos
+
+## Exportar
+
+Named exports, exportar individualmente
+
+Default exports, exporta toda o arquivo, retorno padrão, um por arquivo
+
+## Importar
+
+Named exports:
+
+import{funcao,variavel,classe} from './arquivo.js'
+
+Default exports:
+
+import valorDefault from './arquivo.js'
+
+## Em HTML
+
+Devemos usar type="module" para que o arquivo html e o browser entendam a sintaxe de module.
+
+<script type="module" src="./main.js"></script>
+
